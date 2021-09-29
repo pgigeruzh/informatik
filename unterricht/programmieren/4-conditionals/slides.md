@@ -9,7 +9,7 @@ author: Peter Giger
 
 > Sie können ein Flussdiagramm aufgrund von Programmcode (oder vice verca) erstellen
 
-# Conditionals (Bedingte Anweisung & Verzweigung)
+# Was sind Conditionals? <i class="fas fa-code-branch"></i><br> (Bedingte Anweisung & Verzweigung)
 
 Conditionals kennen sie bereits aus ihrem Alltag z. B. 
 
@@ -30,7 +30,7 @@ if False:
 :::
 
 
-# If-Elif-Else <i class="fas fa-code-branch"></i>
+# Conditionals in Python (If-Elif-Else) <i class="fas fa-code-branch"></i>
 
 ```python
 aString = input("Geben sie eine Ganzzahl ein: ")

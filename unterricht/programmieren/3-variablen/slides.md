@@ -9,7 +9,7 @@ author: Peter Giger
 
 > Sie kennen die vier wichtigsten Datentypen und können diese (falls nötig) umwandeln
 
-# Variablen <i class="fas fa-concierge-bell"></i>
+# Was sind Variablen? <i class="fas fa-concierge-bell"></i>
 
 Eine Variable ist ein Behälter, um Daten zu speichern (vgl. Mathematik).
 
@@ -20,7 +20,7 @@ print(name) # Output: Christian
 name = 3 # Variable überschreiben
 print(name) # Output: 3 
 
-name = input("Gib deinen Namen ein: ") # Benutzereingabe (String)
+name = input("Gib deinen Namen ein: ") # Benutzereingabe
 print("Dein Name ist: " + name) # Output: ?
 ```
 
@@ -33,7 +33,7 @@ Demo mit Box?
 :::
 
 
-# Datentypen <i class="fas fa-divide"></i>
+# Was sind Datentypen? <i class="fas fa-divide"></i>
 
 Jede Variable hat einen Datentyp. Die vier wichtigsten:
 
@@ -55,7 +55,7 @@ print(type(x)) # Output: string (String/Zeichenkette)
 :::
 
 
-# Type Casting <i class="fas fa-divide"></i>
+# Konvertierung von Datentypen (Type Casting) <i class="fas fa-divide"></i>
 
 Manchmal muss man Datentypen umwandeln
 

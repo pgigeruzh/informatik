@@ -37,10 +37,10 @@ author: Peter Giger
 ||||
 | ----------------------------------- | ----------------------------------- | ----------------------------------- |
 | ![](images/line.jpg){ height=250px } | ![](images/machine.jpg){ height=250px } | ![](images/sensor.jpg){ height=250px } |
-| ![](images/esp32.jpg){ height=250px } | ![](images/code.jpg){ height=250px } | <video src="images/movie.MOV" controls height="250px"></video> |
+| ![](images/esp32.jpg){ height=250px } | ![](images/code.jpg){ height=250px } | <video src="images/movie.mov" controls height="250px"></video> |
 
 
-# Auftrag: In 3 Gruppen (ca. 15 Minuten) <i class="fas fa-users"></i>
+# Auftrag: Bearbeiten Sie folgende Themen <br> (3 Gruppen, ca. 15 Minuten) <i class="fas fa-users"></i>
 
 - Gruppe 1: [Syntax vs. Semantik](https://gadget-info.com/difference-between-syntax)
 - Gruppe 2: [Kompilierte vs. interpretierte Sprache](https://www.elektronik-kompendium.de/sites/com/1705231.htm)
