@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - Conditionals (if-elif-else)</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="../../../assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/theme/beige.css">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .reveal p {
+      line-height: 1.1;
+      font-size: 0.9em;
+    }
+    .reveal li::marker {
+      font-size: 0.9em;
+    }
+    .reveal blockquote {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .article-only {
+      display: none !important;
+      height: 0px !important;
+      line-height: 0px !important;
+      font-size: 0px !important;
+    }
+    .reveal img, .reveal video, .reveal iframe {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+  <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- font awesome -->
+  <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="lernziele" class="slide level1">
+<h1>Lernziele <i class="fas fa-bullseye"></i></h1>
+<blockquote>
+<p>Sie verstehen das Prinzip von Conditionals (If-Elif-Else) und können dieses Wissen in einem Programm umsetzen</p>
+</blockquote>
+<blockquote>
+<p>Sie können ein Flussdiagramm aufgrund von Programmcode (oder vice verca) erstellen</p>
+</blockquote>
+</section>
+<section id="conditionals-bedingte-anweisung-verzweigung" class="slide level1">
+<h1>Conditionals (Bedingte Anweisung &amp; Verzweigung)</h1>
+<p>Conditionals kennen sie bereits aus ihrem Alltag z. B.</p>
+<blockquote>
+<p>wenn Note &gt; 4, dann Prüfung bestanden</p>
+</blockquote>
+<p>In Python schreibt man “if Bedingung: dann”. Die Bedingung ist dabei immer ein Boolean (True/False) z. B.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">True</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Dieser Output wird immer angezeigt&quot;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">False</span>:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Dieser Output wird nie angezeigt&quot;</span>)</span></code></pre></div>
+<aside class="notes">
+<ul>
+<li>Mehr Beispiele aus dem Alltag</li>
+</ul>
+</aside>
+</section>
+<section id="if-elif-else" class="slide level1">
+<h1>If-Elif-Else <i class="fas fa-code-branch"></i></h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>aString <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Geben sie eine Ganzzahl ein: &quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="bu">int</span>(aString) <span class="co"># Type Casting</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> a <span class="op">&gt;</span> <span class="dv">1</span>: <span class="co"># wenn a grösser als 1 ist</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist grösser als 1&quot;</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> a <span class="op">&lt;</span> <span class="dv">1</span>: <span class="co"># wenn a kleiner als 1 ist</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist kleiner als 1&quot;</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>: <span class="co"># wenn keine der vorherigen Bedingungen passt</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist gleich 1&quot;</span>)</span></code></pre></div>
+<p><strong>Achtung:</strong> Ein Vergleich in Python ist ==, eine Zuweisung ist =</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span> <span class="co"># Ein Gleichheitszeichen ist eine Zuweisung</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> a <span class="op">==</span> <span class="dv">5</span>: <span class="co"># Zwei Gleichheitszeichen sind ein Vergleich</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist gleich 5&quot;</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> a <span class="op">!=</span> <span class="dv">5</span>: <span class="co"># Ein Ausrufezeichen bedeutet &quot;nicht-gleich&quot;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist nicht gleich 5&quot;</span>)</span></code></pre></div>
+<aside class="notes">
+<ul>
+<li>Demo</li>
+</ul>
+</aside>
+</section>
+<section id="das-flussdiagramm-als-visuelle-darstellung" class="slide level1">
+<h1>Das Flussdiagramm als visuelle Darstellung <i class="fas fa-chart-pie"></i></h1>
+<p><img data-src="images/flussdiagramm.drawio.png" height="400" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Note eingeben: &quot;</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> n <span class="op">&gt;=</span> <span class="dv">4</span>:</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Note: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Prüfung nicht bestanden!&quot;</span>)</span></code></pre></div>
+<aside class="notes">
+<ul>
+<li>Zeige Wikipedia / Drawio (flowchart)</li>
+</ul>
+</aside>
+</section>
+<section id="auftrag-login-mit-passwort" class="slide level1">
+<h1>Auftrag: Login mit Passwort <i class="fas fa-shoe-prints"></i></h1>
+<ol type="1">
+<li><p>Programmieren Sie ein Login (nur mit Passwort, ohne Benutzernamen). Wenn das Passwort korrekt ist, soll “Herzlich Willkommen” erscheinen, andernfalls “Passwort nicht korrekt”.</p></li>
+<li><p>Erstellen sie das Flussdiagramm dazu</p></li>
+</ol>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/windows_login.png" width="400" /></td>
+<td><img data-src="images/login_without_username.png" height="100" /></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+
+</aside>
+</section>
+<section id="auftrag-login-mit-benutzer-und-passwort" class="slide level1">
+<h1>Auftrag: Login mit Benutzer und Passwort <i class="fas fa-shoe-prints"></i></h1>
+<ol type="1">
+<li><p>Ergänzen sie das Login mit einem Benutzernamen (neues .py file). Falls der Benutzer nicht existiert, soll “Benutzer nicht gefunden” ausgegeben werden.</p></li>
+<li><p>Erstellen sie ein Flussdiagrammm dazu</p></li>
+</ol>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/instagram_login.png" width="400" /></td>
+<td><img data-src="images/login_with_username.png" height="100" /></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="../../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="../../../assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="../../../assets/reveal.js/plugin/math/math.js"></script>
+  <script src="../../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu]
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - Installation von VSCode und Python</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="../../../assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/theme/beige.css">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .reveal p {
+      line-height: 1.1;
+      font-size: 0.9em;
+    }
+    .reveal li::marker {
+      font-size: 0.9em;
+    }
+    .reveal blockquote {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .article-only {
+      display: none !important;
+      height: 0px !important;
+      line-height: 0px !important;
+      font-size: 0px !important;
+    }
+    .reveal img, .reveal video, .reveal iframe {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+  <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- font awesome -->
+  <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="lernziele" class="slide level1">
+<h1>Lernziele <i class="fas fa-bullseye"></i></h1>
+<blockquote>
+<p>Sie können ihre Programmierumgebung selbstständig installieren und einrichten.</p>
+</blockquote>
+<blockquote>
+<p>Sie organisieren ihre Dateien in einer geeigneten Verzeichnisstruktur, d. h. sie finden die jeweiligen Dateien in wenigen Sekunden</p>
+</blockquote>
+</section>
+<section id="auftrag-pythonvscode-installieren" class="slide level1">
+<h1>Auftrag: Python/VSCode Installieren <i class="fas fa-download"></i></h1>
+<ol type="1">
+<li><p>Python 3 herunterladen und installieren (Mac-User müssen über <a href="https://brew.sh">HomeBrew</a> installieren):</p>
+<p><a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p></li>
+<li><p>VSCode herunterladen und installieren:</p>
+<p><a href="https://code.visualstudio.com">https://code.visualstudio.com</a></p></li>
+<li><p>VSCode Python Extension installieren:</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">https://marketplace.visualstudio.com/items?itemName=ms-python.python</a></p></li>
+</ol>
+</section>
+<section id="auftrag-installation-überprüfen" class="slide level1">
+<h1>Auftrag: Installation überprüfen <i class="fas fa-check"></i></h1>
+<ol type="1">
+<li><p>Im VSCode: <strong>Terminal -&gt; Neues Terminal</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Folgenden Befehl ausführen:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">--version</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Der Output sollte Python 3.x sein:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Python</span> 3.9.7</span></code></pre></div></li>
+<li><p>Im VSCode: <strong>Datei -&gt; Neue Datei</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Diesen Code einfügen und als &quot;hello.py&quot; speichern:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Hello World&quot;</span>)</span></code></pre></div>
+<p>Dann auf <strong>Ausführen -&gt; Ohne Debuggen Ausführen</strong><br />
+(Ihr Terminal sollte nun “Hello World” anzeigen)</p></li>
+</ol>
+<aside class="notes">
+<ul>
+<li>Demo</li>
+</ul>
+</aside>
+</section>
+<section id="auftrag-adäquate-verzeichnisstruktur-erstellen" class="slide level1">
+<h1>Auftrag: Adäquate Verzeichnisstruktur erstellen</h1>
+<ol type="1">
+<li><p>Ordner für die Programmierung erstellen (z. B. Informatik -&gt; Programmieren)</p></li>
+<li><p>Im VSCode: <strong>Datei -&gt; Öffnen</strong></p></li>
+<li><p>Geeigneten Verzeichnisstruktur erstellen, z. B.</p>
+<p><img data-src="images/vscode.png" style="width:100.0%" /></p></li>
+</ol>
+<aside class="notes">
+<ul>
+<li>Demo</li>
+</ul>
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="../../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="../../../assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="../../../assets/reveal.js/plugin/math/math.js"></script>
+  <script src="../../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu]
+    });
+  </script>
+</body>
+
+</html>
