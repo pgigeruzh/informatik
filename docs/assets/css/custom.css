@@ -1,0 +1,20 @@
+/*
+* Article
+*/
+
+body {
+  text-align: justify !important;
+}
+
+blockquote {
+  padding: 5px 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.notes {
+  display: none;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
