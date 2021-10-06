@@ -1,5 +1,5 @@
 ---
-title: Conditionals (if-elif-else)
+title: Conditionals (if-elif-else) und Flussdiagramme
 author: Peter Giger
 ---
 
@@ -87,7 +87,7 @@ else:
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/windows_login.png){ width=400px } | ![](images/login_without_username.png){ height=100px } |
+| ![](images/mac_login.jpg){ width=300px } | ![](images/login_without_username.png){ height=100px } |
 
 ::: notes
 :::

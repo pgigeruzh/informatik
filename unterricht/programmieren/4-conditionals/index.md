@@ -1,5 +1,5 @@
 ---
-title: Conditionals (if-elif-else)
+title: Conditionals (if-elif-else) und Flussdiagramme
 author: Peter Giger
 ...
 

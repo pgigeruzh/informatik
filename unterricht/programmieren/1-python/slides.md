@@ -27,8 +27,8 @@ author: Peter Giger
 2. Findet fast überall Verwendung
    
    - IoT: Raspberry Pi ![](images/raspberry.jpg){ width=100px }
-   - Machine Learning: Netflix ![](images/netflix.png){ width=50px }
-   - Web App (Backend): Instagram ![](images/instagram.png){ width=50px }
+   - Machine Learning: Netflix ![](images/netflix.jpg){ width=75px }
+   - Web App (Backend): Instagram ![](images/instagram.jpg){ width=60px }
    - Web App (Frontend): -
 
 
@@ -47,6 +47,9 @@ author: Peter Giger
 - Gruppe 3: [Backend vs. Frontend](https://www.ironhack.com/de/webentwicklung/front-end-vs-back-end-unterschied)
 
 Eine (zufällige) Person pro Gruppe präsentiert ihr Thema
+
+
+<small><br>Tipp: Bleiben sie produktiv! Machen sie z. B. eine kurze Zusammenfassung, welche sie dann mit ihren MitschülerInnen teilen. Schauen sie auch in die "Prüfungsvorbereitung" und überprüfen sie, ob sie das Thema verstanden haben (inkl. Notieren der Antworten).</small>
 
 ::: notes
 - Syntax vs. Semantik:
