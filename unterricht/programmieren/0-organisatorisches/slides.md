@@ -10,28 +10,26 @@ author: Peter Giger
 - Dauer <i class="fas fa-calendar-alt"></i>: Okt. - Dez. (ca. 6 Doppellektionen)
   
 - Prüfung <i class="fas fa-paste"></i>: Schriftlich auf Papier <br>
-(ähnliche Aufgaben wie in den Aufträgen/Prüfungsvorbereitung)
+(ähnliche Aufgaben wie in den Aufträgen bzw. in der "Prüfungsvorbereitung")
   
-- Bonuspunkte <i class="fas fa-star"></i>: Jede Woche eine "Kurzprüfung" <br> (ca. 5 Min, insgesamt max. 0.5 Note)
+- Angesagte Zwischenprüfung(en) <i class="fas fa-bolt"></i>: Ca. 5-10 Minuten
 
 ::: notes
 :::
 
 
-# Warum jede Woche eine Kurzprüfung? <i class="fas fa-walking"></i>
+# Warum eine Zwischenprüfung? <i class="fas fa-walking"></i>
+
+- Vorbereitung auf die Endprüfung <i class="fas fa-paste"></i>
 
 - Programmieren ist aufbauend! <i class="far fa-building"></i>
 
 - Programmieren heisst "Üben, üben & nochmals üben!" <i class="fas fa-dumbbell"></i>
-  <br> (Selber experimentieren! Aufträge/Prüfungsvorbereitung dienen nur als Anhaltspunkt!)
-
-- Jede/r lernt unterschiedlich <i class="fas fa-user-alt"></i>
-  <br> (Lernaufwand für die Kurzprüfung ca. 5 Min - 1h):
+  <br> (Selber experimentieren! Nicht nur anderen beim Programmieren zusehen.)
 
 ::: notes
 - Aufbauend: Ohne das Thema "Variablen" kann man praktisch nicht weiterfahren, vgl. Mathematik
 - Üben: Selber experimentieren und nicht nur Videos schauen!
-- Lernaufwand: max. 1h, sonst bitte sagen.
 :::
 
 
@@ -40,7 +38,10 @@ author: Peter Giger
 Es gibt genügend Material (Videos, Blogs, Wiki etc.) im Internet, um Programmieren zu lernen. Was das Internet nicht bietet:
 
 1. Hilfe bei Fragen <i class="far fa-question-circle"></i>
-2. Feedback <i class="far fa-comments"></i>
+2. Ausführliche Erklärungen <i class="fas fa-search"></i>
+3. Feedback <i class="far fa-comments"></i>
+4. Klare Aufträge <i class="fas fa-shoe-prints"></i>
+5. Keine Überraschung bei der Prüfung <i class="fas fa-paste"></i>
 
 ::: notes
 :::
