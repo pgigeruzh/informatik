@@ -11,3 +11,5 @@ title: "Einführung in die Programmierung"
 [3. Variablen, Datentypen und Type Casting](3-variablen/)
 
 [4. Conditionals (if-elif-else) und Flussdiagramme](4-conditionals/)
+
+[5. Loops (while, for) und Flussdiagramme](5-loops/)

@@ -22,11 +22,31 @@ Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hi
 > Nennen sie die vier wichtigsten Datentypen und geben sie je ein Beispiel dazu.
 
 > Was ist der Output von diesem Programm?
-	```python
-	a = 6
-	b = 1.5
-	c = a + b + (a / b)
-	print("Output: " + str(c))
-	```
+> ```python
+> x = int(2.6)
+> y = 2
+> print(x * 2)
+> ```
+
+> Was ist der Output von diesem Programm?
+> ```python
+> x = "Hello "
+> y = "World"
+> print(x + y)
+> ```
+
+> Was ist der Output von diesem Programm?
+> ```python
+> a = 6
+> b = 1.5
+> c = a + b + (a / b)
+> print("Output: " + str(c))
+> ```
+
+> Was macht dieses Programm?
+> ```python
+> x = float(input("Geben sie eine Zahl ein: "))
+> print(x * x)
+> ```
 
 > Erstellen sie ein Programm, welches ihren BMI (Body-Mass-Index) berechnet. Der BMI ist denifiert als: $$ BMI = Gewicht (kg) / Grösse (m)2 $$ ![](images/bmi_calculator.png){ width=100% }
