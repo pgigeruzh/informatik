@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - Listen</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="../../../assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/theme/beige.css">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .reveal p {
+      line-height: 1.1;
+      font-size: 0.9em;
+    }
+    .reveal li::marker {
+      font-size: 0.9em;
+    }
+    .reveal blockquote {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .article-only {
+      display: none !important;
+      height: 0px !important;
+      line-height: 0px !important;
+      font-size: 0px !important;
+    }
+    .reveal img, .reveal video, .reveal iframe {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+  <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- font awesome -->
+  <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="lernziele" class="slide level1">
+<h1>Lernziele <i class="fas fa-bullseye"></i></h1>
+<blockquote>
+<p>Sie verstehen das Prinzip von Listen und können dieses Wissen in einem Programm umsetzen</p>
+</blockquote>
+</section>
+<section id="was-sind-listen" class="slide level1">
+<h1>Was sind Listen? <i class="fas fa-list-ul"></i></h1>
+<p>Eine Liste speichert mehrere Elemente, z. B. eine Einkaufsliste:</p>
+<ul>
+<li>Brot</li>
+<li>Nutella</li>
+<li>Milch</li>
+<li>…</li>
+</ul>
+<p>In Python werden Listen mit eckigen Klammern [] geschrieben:</p>
+<pre class="pythons"><code>x = [&quot;Brot&quot;, &quot;Nutella&quot;, &quot;Milch&quot;] # definition einer Liste
+
+print(x) # Output: &quot;['Brot', 'Nutella', 'Milch']&quot;</code></pre>
+<aside class="notes">
+
+</aside>
+</section>
+<section id="zugriff-auf-listenelemente" class="slide level1">
+<h1>Zugriff auf Listenelemente <i class="fas fa-sync-alt"></i></h1>
+<p>Der Zugriff auf Listenelemente kann auf zwei verschiedene Arten erfolgen.</p>
+<p>Direkt:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>einkaufsliste <span class="op">=</span> [<span class="st">&quot;Brot&quot;</span>, <span class="st">&quot;Nutella&quot;</span>, <span class="st">&quot;Milch&quot;</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(einkaufsliste[<span class="dv">0</span>]) <span class="co"># Output: Brot</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(einkaufsliste[<span class="dv">1</span>]) <span class="co"># Output: Nutella</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(einkaufsliste[<span class="dv">2</span>]) <span class="co"># Output: Milch</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(einkaufsliste[<span class="dv">3</span>]) <span class="co"># Output: IndexError: list index out of range</span></span></code></pre></div>
+<p>Loop:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> element <span class="kw">in</span> einkaufsliste: <span class="co"># Output: Brot, Nutella, Milch</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(element)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- oder ---- #</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(einkaufsliste)): <span class="co"># len() ist die Listenlänge</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(einkaufsliste[i])</span></code></pre></div>
+<div class="note">
+
+</div>
+</section>
+<section id="listenelemente-bearbeiten" class="slide level1">
+<h1>Listenelemente bearbeiten <i class="far fa-edit"></i></h1>
+<p>Ein Element ändern <i class="fas fa-pencil-alt"></i>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>einkaufsliste <span class="op">=</span> [<span class="st">&quot;Brot&quot;</span>, <span class="st">&quot;Nutella&quot;</span>, <span class="st">&quot;Milch&quot;</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>einkaufsliste[<span class="dv">1</span>] <span class="op">=</span> <span class="st">&quot;Bananen&quot;</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Resultat: ['Brot', 'Bananen', 'Milch']</span></span></code></pre></div>
+<p>Ein Element hinzufügen <i class="fas fa-plus"></i>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>einkaufsliste <span class="op">=</span> [<span class="st">&quot;Brot&quot;</span>, <span class="st">&quot;Nutella&quot;</span>, <span class="st">&quot;Milch&quot;</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>einkaufsliste.append(<span class="st">&quot;Bananen&quot;</span>) </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Resultat: ['Brot', 'Bananen', 'Milch', &quot;Bananen&quot;]</span></span></code></pre></div>
+<p>Ein Element löschen <i class="far fa-trash-alt"></i>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>einkaufsliste <span class="op">=</span> [<span class="st">&quot;Brot&quot;</span>, <span class="st">&quot;Nutella&quot;</span>, <span class="st">&quot;Milch&quot;</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>einkaufsliste.pop()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Resultat: [&quot;Brot&quot;, &quot;Nutella&quot;]</span></span></code></pre></div>
+<div class="note">
+
+</div>
+</section>
+<section id="auftrag-einkaufsliste" class="slide level1">
+<h1>Auftrag: Einkaufsliste <i class="fas fa-shoe-prints"></i></h1>
+<p>Programmieren sie eine Einkaufsliste, bei der sie Artikel hinzufügen können. Die Liste soll dabei nach jeder Eingabe wieder ausgegeben werden.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/einkaufswagen.jpg" height="350" /></td>
+<td><img data-src="images/einkaufsliste.png" height="350" /></td>
+</tr>
+</tbody>
+</table>
+<p><small>Tipp: Mit “while: True” wird eine Schleife unendlich oft ausgeführt und mit CTRL-C können sie das Programm trotzdem terminieren</small></p>
+<aside class="notes">
+
+</aside>
+</section>
+<section id="auftrag-notendurchschnittsrechner" class="slide level1">
+<h1>Auftrag: Notendurchschnittsrechner <i class="fas fa-shoe-prints"></i></h1>
+<p>Programmieren sie einen Notendurchschnittsrechner. Das Ziel: Sie können ihre Noten eingeben und der Rechner gibt ihnen ihren aktuellen Durchschnitt zurück.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/graduation.png" height="350" /></td>
+<td><img data-src="images/notendurchschnittsrechner.png" height="350" /></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="../../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="../../../assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="../../../assets/reveal.js/plugin/math/math.js"></script>
+  <script src="../../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu]
+    });
+  </script>
+</body>
+
+</html>

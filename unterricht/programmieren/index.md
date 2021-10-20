@@ -15,3 +15,5 @@ title: "Einführung in die Programmierung"
 [5. Loops (while, for) und Flussdiagramme](5-loops/)
 
 [6. Funktionen](6-funktionen/)
+
+[7. Listen](7-listen/)
