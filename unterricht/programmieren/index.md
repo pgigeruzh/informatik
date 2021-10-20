@@ -4,7 +4,7 @@ title: "Einführung in die Programmierung"
 
 [0. Organisatorisches](0-organisatorisches/)
 
-[1. Warum Python?](1-python/)
+[1. Warum Python?](1-warum-python/)
 
 [2. Installation von VSCode und Python](2-installation/)
 
@@ -14,6 +14,6 @@ title: "Einführung in die Programmierung"
 
 [5. Loops (while, for) und Flussdiagramme](5-loops/)
 
-[6. Funktionen](6-funktionen/)
+[6. Listen](6-listen/)
 
-[7. Listen](7-listen/)
+[7. Funktionen](7-funktionen/)
