@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+    <title>Informatik - Funktionen</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../../../assets/css/default.css" />
+    <link rel="stylesheet" href="../../../assets/css/custom.css" />
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+    <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- font awesome -->
+    <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="../../../">Informatik</a>
+        </div>
+        <nav>
+            <a href="../../../">Home</a>
+            <a href="../../../unterricht/">Unterricht</a>
+            <a href="../../../kontakt/">Kontakt</a>
+        </nav>
+    </header>
+
+    <main role="main">
+        <h1>Funktionen</h1>
+        <article>
+    <section class="header">
+        
+        by Peter Giger
+        
+    </section>
+    <section>
+        <h1 id="dokumente">Dokumente</h1>
+<p><a href="slides.html">Slides</a></p>
+<h1 id="hilfreiche-links">Hilfreiche Links</h1>
+<p><strong>Wichtig:</strong> Verbringen sie nicht zu viel Zeit mit der Theorie. Stundenlang Videos schauen oder Texte lesen, wird sie nicht weiterbringen. Beim Programmieren geht es um das “Können” und nicht um das “Wissen”. Deshalb empfehle ich ihnen, selber zu experimentieren und viel zu üben (z. B. mit den Aufträgen oder eigenen Ideen/Projekten).</p>
+<p>Auf <strong>Youtube</strong> finden sie (teilweise) gute Erklärvideos zum Thema Python. Hier sind einige Beispiellinks zu den Themen <a href="https://www.youtube.com/watch?v=LQCfN5HS9xI&amp;list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB&amp;index=18">Funktionen I</a>, <a href="https://www.youtube.com/watch?v=af9ORp1Pty0&amp;list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB&amp;index=19">Funktionen II</a> und <a href="https://www.youtube.com/watch?v=ehSP-sYoKCY&amp;list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB&amp;index=20">Funktionen III</a>.</p>
+<p>Die Plattform <strong>W3Schools</strong> bietet sich als Nachschlagewerk an (in Englisch). Hier ist der Link zum Thema <a href="https://www.w3schools.com/python/python_functions.asp">Funktionen</a>.</p>
+<h1 id="prüfungsvorbereitung">Prüfungsvorbereitung</h1>
+<blockquote>
+<p>Was ist der Output von diesem Programm?</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> meine_funktion(x, y, z):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">&gt;</span> y:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> z</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> z <span class="op">-</span> <span class="dv">1</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> meine_funktion(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x)</span></code></pre></div>
+</blockquote>
+<blockquote>
+<p>Was macht diese Funktion (in Worte gefasst)?</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> meine_funktion(x, y):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">&gt;</span> y:</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> x</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> y</span></code></pre></div>
+</blockquote>
+<blockquote>
+<p>Programmieren sie einen Würfel und würfeln sie 1000-mal. Um eine Zufallszahl zu generieren, können sie die Funktion “random()” verwenden. Diese generiert eine Zufallszahl zwischen 0 und 1 (float). Dafür müssen sie jedoch die Funktion zuerst importieren:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> random <span class="im">import</span> random <span class="co"># Import der Funktion random()</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> wuerfle():</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    zufallszahl <span class="op">=</span> random() <span class="co"># Zufallszahl generieren</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Ihr Code kommt hier..</span></span></code></pre></div>
+<p>(Tipp: Es gibt verschiedene Lösungswege z. B. mit if-then-else)</p>
+<p><img src="images/wuerfel.png" style="width:100.0%" /></p>
+</blockquote>
+    </section>
+</article>
+    </main>
+
+    <footer>
+        Site proudly generated by
+        <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        and hosted on
+        <a href="https://github.com/pgigeruzh/informatik">GitHub</a>
+    </footer>
+</body>
+
+</html>

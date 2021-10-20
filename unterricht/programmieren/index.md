@@ -13,3 +13,5 @@ title: "Einführung in die Programmierung"
 [4. Conditionals (if-elif-else) und Flussdiagramme](4-conditionals/)
 
 [5. Loops (while, for) und Flussdiagramme](5-loops/)
+
+[6. Funktionen](6-funktionen/)

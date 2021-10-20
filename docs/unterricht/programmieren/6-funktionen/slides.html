@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - Funktionen</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="../../../assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/theme/beige.css">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .reveal p {
+      line-height: 1.1;
+      font-size: 0.9em;
+    }
+    .reveal li::marker {
+      font-size: 0.9em;
+    }
+    .reveal blockquote {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .article-only {
+      display: none !important;
+      height: 0px !important;
+      line-height: 0px !important;
+      font-size: 0px !important;
+    }
+    .reveal img, .reveal video, .reveal iframe {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+  <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- font awesome -->
+  <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="lernziele" class="slide level1">
+<h1>Lernziele <i class="fas fa-bullseye"></i></h1>
+<blockquote>
+<p>Sie verstehen das Prinzip von Funktionen und können dieses Wissen in einem Programm umsetzen</p>
+</blockquote>
+</section>
+<section id="was-sind-funktionen" class="slide level1">
+<h1>Was sind Funktionen? <i class="fas fa-calculator"></i></h1>
+<p>Funktionen kennen sie bereits aus der Mathematik, <br> z. B. <span class="math display"><em>f</em>(<em>x</em>) = 2<em>x</em></span>.</p>
+<p>In Python werden Funktionen mit “def”/“return” definiert und meistens verwendet, um Code besser zu strukturieren:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># definition einer Funktion</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> meine_funktion(x):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="dv">2</span><span class="op">*</span>x</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktionen können mehrmals aufgerufen werden</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meine_funktion(<span class="dv">2</span>))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(meine_funktion(<span class="dv">4</span>))</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: 4 8</span></span></code></pre></div>
+<p>(Im Gegensatz zu einer Variable sollte ein langer Funktionsname mit einem Bodenstrich getrennt werden z. B. “bmi_berechnen()” und nicht “bmiBerechnen()”)</p>
+<aside class="notes">
+<ul>
+<li>print / range haben sie bereits verwendet</li>
+<li>snake case</li>
+</ul>
+</aside>
+</section>
+<section id="parameter-bzw.-argumente" class="slide level1">
+<h1>Parameter bzw. Argumente <i class="fas fa-concierge-bell"></i></h1>
+<p>Funktionen können (müssen aber keine) Argumente haben:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> funktion_ohne_argument():</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;hello&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> funktion_mit_argument(x):</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(x)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Funktionen haben immer Klammern (mit oder ohne Argumente)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>funktion_ohne_argument()</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>funktion_mit_argument(<span class="st">&quot;world&quot;</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: hello world</span></span></code></pre></div>
+<p>Die Argumente sind nur innerhalb der Funktion erreichbar:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> meine_funktion(x):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(x) <span class="co"># x ist das Argument/Parameter</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x) <span class="co"># x wird nicht gefunden</span></span></code></pre></div>
+<div class="note">
+
+</div>
+</section>
+<section id="rückgabewert" class="slide level1">
+<h1>Rückgabewert <i class="fas fa-exchange-alt"></i></h1>
+<p>Funktionen können (müssen aber keinen) Rückgabewert haben. Ein Rückgabewert ist nichts anderes als eine Variable, welche ausserhalb der Funktion gespeichert werden kann:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> funktion_ohne_rückgabewert(x):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>x</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> funktion_mit_rückgabewert(x):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  y <span class="op">=</span> <span class="dv">2</span><span class="op">*</span>x</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> y</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>v1 <span class="op">=</span> funktion_ohne_rückgabewert(<span class="dv">5</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>v2 <span class="op">=</span> funktion_mit_rückgabewert(<span class="dv">5</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(v1) <span class="co"># Output: None</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(v2) <span class="co"># Output: 10</span></span></code></pre></div>
+</section>
+<section id="reine-vs.-modifizierte-funktionen" class="slide level1">
+<h1>Reine vs. Modifizierte Funktionen <i class="fas fa-redo"></i></h1>
+<p>In der Programmierung wird zwischen reinen (“pure”) und modifizierten (“impure”) Funktionen unterschieden. Reine Funktionen geben für den gleichen Input immer den gleichen Output z. B. mathematische Funktionen. Benutzen sie, wenn möglich, reine Funktionen!</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>globaleVariable <span class="op">=</span> <span class="dv">0</span> <span class="co"># das ist eine globale Variable</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reine_funktion(x):</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="dv">2</span><span class="op">*</span>x</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> modifizierte_funktion(x):</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">global</span> globaleVariable <span class="co"># auf globale Variable zugreifen</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  globaleVariable <span class="op">=</span> globaleVariable <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="dv">2</span><span class="op">*</span>x<span class="op">*</span>globaleVariable</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>reine_funktion(<span class="dv">4</span>) <span class="co"># Output: 8</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>reine_funktion(<span class="dv">4</span>) <span class="co"># Output: 8</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>modifizierte_funktion(<span class="dv">4</span>) <span class="co"># Output: 8</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>modifizierte_funktion(<span class="dv">4</span>) <span class="co"># Output: 16 --&gt; anderer Output</span></span></code></pre></div>
+<aside class="notes">
+
+</aside>
+</section>
+<section id="auftrag-brief-adressieren" class="slide level1">
+<h1>Auftrag: Brief Adressieren <i class="fas fa-shoe-prints"></i></h1>
+<ol type="1">
+<li>Erstellen sie eine Funktion, welche eine korrekt formatierte Adresse ausgibt. Rufen sie dann die Funktion auf und geben sie mind. 2 verschiedene Adressen aus. Die Funktion soll folgende Argumente besitzen:<br />
+Vorname, Name, Strasse, Strassennr, Plz, Ort</li>
+</ol>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/brief.png" height="200" /></td>
+<td><img data-src="images/brief_adresse.png" height="200" /></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+
+</aside>
+</section>
+<section id="auftrag-uhrzeit-addierer" class="slide level1">
+<h1>Auftrag: Uhrzeit Addierer <i class="fas fa-shoe-prints"></i></h1>
+<p>Erstellen sie eine Funktion, welche zu einer Uhrzeit beliebig viele Minuten dazuzählen kann. Als Beispiel:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> uhrzeit_minuten_addieren(stunden, minuten, summand):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Ihr Code...</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>uhrzeit_minuten_addieren(<span class="dv">17</span>, <span class="dv">32</span>, <span class="dv">8</span>) <span class="co"># 17:32 + 8 Min = 17:40</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>uhrzeit_minuten_addieren(<span class="dv">19</span>, <span class="dv">7</span>, <span class="dv">63</span>) <span class="co"># 19:07 + 63 Min = 20:10</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>uhrzeit_minuten_addieren(<span class="dv">16</span>, <span class="dv">10</span>, <span class="dv">1111</span>) <span class="co"># 16:10 + 1111 Min = 10:41</span></span></code></pre></div>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/uhren.jpg" height="150" /></td>
+<td><img data-src="images/uhrzeit_rechner.png" height="150" /></td>
+</tr>
+</tbody>
+</table>
+<p><small>(Tipp: Mit diesem <a href="https://www.timeanddate.com/date/timeadd.html">Tool</a> können sie schauen, ob ihre Implementation das gleiche Resultat liefert)</small></p>
+<aside class="notes">
+
+</aside>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="../../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="../../../assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="../../../assets/reveal.js/plugin/math/math.js"></script>
+  <script src="../../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu]
+    });
+  </script>
+</body>
+
+</html>
