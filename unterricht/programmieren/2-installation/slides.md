@@ -16,6 +16,8 @@ author: Peter Giger
    
    [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
+   <small>(oder über den [Microsoft Store](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7?activetab=pivot:overviewtab), falls die direkte Installation nicht funktioniert)</small>
+
 2. VSCode herunterladen und installieren:
    
    [https://code.visualstudio.com](https://code.visualstudio.com)

@@ -12,7 +12,7 @@ author: Peter Giger
 - Prüfung <i class="fas fa-paste"></i>: Schriftlich auf Papier <br>
 (ähnliche Aufgaben wie in den Aufträgen bzw. in der "Prüfungsvorbereitung")
   
-- Angesagte Zwischenprüfung(en) <i class="fas fa-bolt"></i>: Ca. 5-10 Minuten
+- (Un)angesagte Zwischenprüfung(en) <i class="fas fa-bolt"></i>: Ca. 5-10 Minuten
 
 ::: notes
 :::
@@ -42,6 +42,16 @@ Es gibt genügend Material (Videos, Blogs, Wiki etc.) im Internet, um Programmie
 3. Feedback <i class="far fa-comments"></i>
 4. Klare Aufträge <i class="fas fa-shoe-prints"></i>
 5. Keine Überraschung bei der Prüfung <i class="fas fa-paste"></i>
+
+::: notes
+:::
+
+
+# Was ich von euch erwarte <i class="fas fa-users"></i>
+
+1. **Eigenständiges Arbeiten** z. B. wer mit den Aufträgen fertig ist, macht selbstständig weiter (oder fragt, was er/sie tun kann). Als Beispiel könnte man bereits beim nächsten Thema die Videos schauen oder die Prüfungsvorbereitungsaufgaben lösen. 
+   
+2. **Respektvoller Umgang** z. B. Rücksicht auf die MitschülerInnen nehmen, zuhören wenn jemand spricht, pünktlich sein etc.
 
 ::: notes
 :::
