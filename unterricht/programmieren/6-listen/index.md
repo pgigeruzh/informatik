@@ -38,6 +38,8 @@ zum Thema Conditionals/Verzweigungen.
 > x = [[1, 2],[3, 4],[5, 6]]
 > ```
 > ![](images/unterlisten.png){ width=100% }
+> 
+> [Lösungsvorschlag](files/unterlisten.py)
 
 > Wievielmal kommt das Wort "die" (Gross- und Kleinschreibung) vor?
 > Erstellen sie ein Programm, welches das Wort "die" (Gross- und Kleinschreibung) im folgenden Text zählt:
@@ -69,3 +71,5 @@ zum Thema Conditionals/Verzweigungen.
 >
 > ![](images/geschichte.png){ width=100% }
 > [Quelle](https://www.computerwoche.de/a/13-wirklich-wahre-it-geschichten,3218843)
+> 
+> [Lösungsvorschlag](files/woerter_zaehlen.py)

@@ -42,6 +42,8 @@ zum Thema Conditionals/Verzweigungen.
 > 
 > print(y)
 > ```
+> 
+> [Lösungsvorschlag](files/prüfungsvorbereitung_1.drawio.png)
 
 > Was ist der Output von diesem Programm? Erstellen Sie ein Flussdiagramm dazu.
 > ```python
@@ -59,6 +61,8 @@ zum Thema Conditionals/Verzweigungen.
 > else:
 >   print("d")
 > ```
+> 
+> [Lösungsvorschlag](files/prüfungsvorbereitung_2.drawio.png)
 
 > Erstellen sie ein Programm, welches Schweizer Noten in das [amerikanische Notensystem](https://gpacalculator.net/grade-conversion/switzerland/) umrechnet.
 >
@@ -70,3 +74,5 @@ zum Thema Conditionals/Verzweigungen.
 > |<4      | F |
 > 
 > ![](images/gpa_calculator.png){ width=100% }
+> 
+> [Lösungsvorschlag](files/gpa_calculator.py)

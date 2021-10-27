@@ -56,4 +56,4 @@ zum Thema Variablen.
 > print(x * x)
 > ```
 
-> Erstellen sie ein Programm, welches ihren BMI (Body-Mass-Index) berechnet. Der BMI ist denifiert als: $$ BMI = Gewicht (kg) / Grösse (m)2 $$ ![](images/bmi_calculator.png){ width=100% }
+> Erstellen sie ein Programm, welches ihren BMI (Body-Mass-Index) berechnet. Der BMI ist denifiert als: $$ BMI = Gewicht (kg) / Grösse (m)2 $$ ![](images/bmi_calculator.png){ width=100% } [Lösungsvorschlag](files/bmi_calculator.py)

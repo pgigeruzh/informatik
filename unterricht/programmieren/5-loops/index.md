@@ -36,6 +36,8 @@ zum Thema Conditionals/Verzweigungen.
 >   i = i + 1
 >   print(i)
 > ```
+> 
+> [Lösungsvorschlag](files/prüfungsvorbereitung_1.drawio.png)
 
 > Was ist der Output von diesem Programm? Übersetzen sie es in eine For-Schleife (wenn möglich) und erstellen sie ein Flussdiagramm dazu.
 > ```python
@@ -47,7 +49,11 @@ zum Thema Conditionals/Verzweigungen.
 >   else:
 >     print(i)
 > ```
+> 
+> [Lösungsvorschlag](files/prüfungsvorbereitung_2.drawio.png)
 
 > Erweitern sie das Login aus dem Auftrag "Conditionals", sodass das Konto nach 3 Fehlversuchen gesperrt wird.
 > 
 > ![](images/login_retry.png){ width=100% }
+> 
+> [Lösungsvorschlag](files/login_retry.py)

@@ -52,3 +52,5 @@ Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hi
 > (Tipp: Es gibt verschiedene Lösungswege z. B. mit if-then-else)
 >
 > ![](images/wuerfel.png){ width=100% }
+> 
+> [Lösungsvorschlag](files/wuerfel.py)
