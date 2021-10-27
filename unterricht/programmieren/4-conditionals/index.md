@@ -18,6 +18,14 @@ Auf **Youtube** finden sie (teilweise) gute Erklärvideos zum Thema Python. Hier
 
 Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hier ist der Link zum Thema [Conditionals](https://www.w3schools.com/python/python_conditions.asp).
 
+Auf der Website von **Sylvia Lange** finden sie noch weitere (gute) Übungsaufgaben. Hier sind die [Aufgaben](https://sylvialange.de/python/Programmieraufgaben.pdf) (7, 8, 9, 10, 11) und die Lösungen
+[[7]](https://sylvialange.de/python/python3/verzweigung/Quader.py)
+[[8]](https://sylvialange.de/python/python3/verzweigung/Rabatt.py)
+[[9]](https://sylvialange.de/python/python3/verzweigung/Rueckgeld.py)
+[[10]](https://sylvialange.de/python/python3/verzweigung/pqFormel.py)
+[[11]](https://sylvialange.de/python/python3/verzweigung/BMI.py)
+zum Thema Conditionals/Verzweigungen.
+
 
 # Prüfungsvorbereitung
 

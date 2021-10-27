@@ -18,6 +18,13 @@ Auf **Youtube** finden sie (teilweise) gute Erklärvideos zum Thema Python. Hier
 
 Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hier ist der Link zum Thema [While-Loop](https://www.w3schools.com/python/python_while_loops.asp) und [For-Loop](https://www.w3schools.com/python/python_for_loops.asp).
 
+Auf der Website von **Sylvia Lange** finden sie noch weitere (gute) Übungsaufgaben. Hier sind die [Aufgaben](https://sylvialange.de/python/Programmieraufgaben.pdf) (17, 18, 19, 20) und die Lösungen
+[[17]](https://sylvialange.de/python/python3/schleifen/Potenz.py)
+[[18]](https://sylvialange.de/python/python3/schleifen/Fakultaet.py)
+[[19]](https://sylvialange.de/python/python3/schleifen/Zweierpotenz.py)
+[[20]](https://sylvialange.de/python/python3/schleifen/SterneRechteck.py)
+zum Thema Conditionals/Verzweigungen.
+
 
 # Prüfungsvorbereitung
 

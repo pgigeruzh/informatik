@@ -16,6 +16,10 @@ Auf **Youtube** finden sie (teilweise) gute Erklärvideos zum Thema Python. Hier
 
 Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hier ist der Link zum Thema [Listen](https://www.w3schools.com/python/python_lists.asp).
 
+Auf der Website von **Sylvia Lange** finden sie noch weitere (gute) Übungsaufgaben. Hier sind die [Aufgaben](https://sylvialange.de/python/Programmieraufgaben.pdf) (13) und die Lösungen
+[[13]](https://sylvialange.de/python/python3/listen/WahlprogrammListen.py)
+zum Thema Conditionals/Verzweigungen.
+
 
 # Prüfungsvorbereitung
 

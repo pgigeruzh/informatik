@@ -16,6 +16,13 @@ Auf **Youtube** finden sie (teilweise) gute Erklärvideos zum Thema Python. Hier
 
 Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hier sind die Links zu den Themen [Variablen](https://www.w3schools.com/python/python_variables.asp), [Datentypen](https://www.w3schools.com/python/python_datatypes.asp) und [Type Casting](https://www.w3schools.com/python/python_casting.asp).
 
+Auf der Website von **Sylvia Lange** finden sie noch weitere (gute) Übungsaufgaben. Hier sind die [Aufgaben](https://sylvialange.de/python/Programmieraufgaben.pdf) (2, 3, 4, 6, 12) und die Lösungen
+[[2]](https://sylvialange.de/python/python3/linear/NettoBrutto.py)
+[[3]](https://sylvialange.de/python/python3/linear/Zins.py)
+[[4]](https://sylvialange.de/python/python3/linear/Rabatt.py)
+[[6]](https://sylvialange.de/python/python3/linear/Quader.py)
+[[12]](https://sylvialange.de/python/python3/linear/Mittelwert.py)
+zum Thema Variablen.
 
 # Prüfungsvorbereitung
 

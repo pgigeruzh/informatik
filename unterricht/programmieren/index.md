@@ -1,6 +1,10 @@
 ---
 title: "Einführung in die Programmierung"
-...
+---
+
+<button onclick="location.href='https://forms.gle/RZ2ezS52p6GpAj6g7'" type="button">
+    Feedback <i class="far fa-star"></i>
+</button>
 
 [0. Organisatorisches](0-organisatorisches/)
 
