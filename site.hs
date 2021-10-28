@@ -30,13 +30,13 @@ main = hakyllWith config $ do
         compile compressCssCompiler
 
     -- compile unterricht (slides)
-    match "unterricht/*/slides.md" $ do
+    match "unterricht/*/slides*.md" $ do
         route $ setExtension "html"
         compile $ customSlidesPandocCompiler defaultHakyllReaderOptions defaultHakyllWriterOptions
             >>= loadAndApplyTemplate "templates/revealjs.html" customContext
             >>= relativizeUrls
 
-    match "unterricht/*/*/slides.md" $ do
+    match "unterricht/*/*/slides*.md" $ do
         route $ setExtension "html"
         compile $ customSlidesPandocCompiler defaultHakyllReaderOptions defaultHakyllWriterOptions
             >>= loadAndApplyTemplate "templates/revealjs.html" customContext
