@@ -105,14 +105,48 @@
 </ul>
 </aside>
 </section>
+<section id="logische-operatoren-optional" class="slide level1">
+<h1>Logische Operatoren (Optional) <i class="fas fa-equals"></i></h1>
+<p><strong>and</strong> (Deutsch: und)</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">6</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">==</span> <span class="dv">5</span> <span class="kw">and</span> y <span class="op">==</span> <span class="dv">6</span>: <span class="co"># wenn x == 5 UND y == 6</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Beide Aussagen sind Wahr&quot;</span>)</span></code></pre></div>
+<p><strong>or</strong> (Deutsch: oder)</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">==</span> <span class="dv">5</span> <span class="kw">or</span> y <span class="op">==</span> <span class="dv">6</span>: <span class="co"># wenn x == 5 ODER y == 6</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Eine oder beide Aussagen sind Wahr&quot;</span>)</span></code></pre></div>
+<p><strong>not</strong> (Deutsch: nicht)</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> x <span class="op">==</span> <span class="dv">5</span>: <span class="co"># gleich wie x != 5</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Die Aussage ist nicht Wahr&quot;</span>)</span></code></pre></div>
+</section>
+<section id="was-ihr-vermeiden-solltet" class="slide level1">
+<h1>Was ihr vermeiden solltet <i class="fas fa-exclamation"></i></h1>
+<p><strong>Vergleichen von Booleans mit ==</strong></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>winter <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> winter <span class="op">==</span> <span class="va">True</span>: <span class="co"># Schlechter Programmierstil</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Es ist Winter&quot;</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> winter: <span class="co"># Viel besser</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Es ist Winter&quot;</span>)</span></code></pre></div>
+<p><strong>Vergleichen von Floats mit ==</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>meter <span class="op">=</span> <span class="fl">1.8324</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> meter <span class="op">==</span> <span class="fl">1.8324</span>: <span class="co"># Nicht gut, da Floats nur &quot;ungefähr&quot; sind</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Sie sind 1.83 Meter gross&quot;</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> meter <span class="op">&gt;</span> <span class="fl">1.83</span> <span class="kw">and</span> meter <span class="op">&lt;</span> <span class="fl">1.84</span>: <span class="co"># Viel besser</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>	<span class="bu">print</span>(<span class="st">&quot;Sie sind 1.83 Meter gross&quot;</span>)</span></code></pre></div>
+</section>
 <section id="das-flussdiagramm-als-visuelle-darstellung" class="slide level1">
 <h1>Das Flussdiagramm als visuelle Darstellung <i class="fas fa-chart-pie"></i></h1>
 <p><img data-src="images/flussdiagramm.drawio.png" height="400" /></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Note eingeben: &quot;</span>))</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> n <span class="op">&gt;=</span> <span class="dv">4</span>:</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Note: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Prüfung nicht bestanden!&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Note eingeben: &quot;</span>))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> n <span class="op">&gt;=</span> <span class="dv">4</span>:</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Note: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(n))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Prüfung nicht bestanden!&quot;</span>)</span></code></pre></div>
 <aside class="notes">
 <ul>
 <li>Zeige Wikipedia / Drawio (flowchart)</li>

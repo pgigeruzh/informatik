@@ -62,6 +62,61 @@ elif a != 5: # Ein Ausrufezeichen bedeutet "nicht-gleich"
 :::
 
 
+# Logische Operatoren (Optional) <i class="fas fa-equals"></i>
+
+
+**and** (Deutsch: und)
+
+```python
+x = 5
+y = 6
+
+if x == 5 and y == 6: # wenn x == 5 UND y == 6
+	print("Beide Aussagen sind Wahr")
+```
+
+**or** (Deutsch: oder)
+
+```python
+if x == 5 or y == 6: # wenn x == 5 ODER y == 6
+	print("Eine oder beide Aussagen sind Wahr")
+```
+
+**not** (Deutsch: nicht)
+
+```python
+if not x == 5: # gleich wie x != 5
+	print("Die Aussage ist nicht Wahr")
+```
+
+
+# Was ihr vermeiden solltet <i class="fas fa-exclamation"></i>
+
+**Vergleichen von Booleans mit ==**
+
+```python
+winter = True
+
+if winter == True: # Schlechter Programmierstil
+	print("Es ist Winter")
+
+if winter: # Viel besser
+	print("Es ist Winter")
+```
+
+**Vergleichen von Floats mit ==**
+
+```python
+meter = 1.8324
+
+if meter == 1.8324: # Nicht gut, da Floats nur "ungefähr" sind
+	print("Sie sind 1.83 Meter gross")
+
+if meter > 1.83 and meter < 1.84: # Viel besser
+	print("Sie sind 1.83 Meter gross")
+```
+
+
 # Das Flussdiagramm als visuelle Darstellung <i class="fas fa-chart-pie"></i>
 
 ![](images/flussdiagramm.drawio.png){ height=400px }
