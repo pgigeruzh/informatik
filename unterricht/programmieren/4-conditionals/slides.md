@@ -13,16 +13,18 @@ author: Peter Giger
 
 Conditionals kennen sie bereits aus ihrem Alltag z. B. 
 
-> wenn Note > 4, dann Prüfung bestanden
+> wenn Note $\geq$ 4, dann Prüfung bestanden
 
-In Python schreibt man "if Bedingung: dann". Die Bedingung ist dabei immer ein Boolean (True/False) z. B.
+In Python schreibt man "if Bedingung: dann". Die Bedingung ist dabei entweder Wahr oder Falsch (Boolean) z. B.
 
 ```python
-if True:
-  print("Dieser Output wird immer angezeigt")
+note = 4.5
 
-if False:
-  print("Dieser Output wird nie angezeigt")
+if note >= 4 # wenn die note grösser gleich vier ist
+  print("Prüfung bestanden") # dann ist die Prüfung bestanden
+  print("...") # alles in einer If-Bedingung muss eingerückt sein
+
+print("Mehr Code") # ohne Einrücken ist es wieder normaler Code
 ```
 
 ::: notes
@@ -30,16 +32,15 @@ if False:
 :::
 
 
-# Conditionals in Python (If-Elif-Else) <i class="fas fa-code-branch"></i>
+# If-Elif-Else <i class="fas fa-code-branch"></i>
+
+Mit **elif** (Abkürzung für "else-if") und **else** (deutsch: sonst) können sie mehrere Bedingungen verschachteln.
 
 ```python
-aString = input("Geben sie eine Ganzzahl ein: ")
-a = int(aString) # Type Casting
-
-if a > 1: # wenn a grösser als 1 ist
+if x > 1: # wenn x grösser als 1 ist
   print("a ist grösser als 1")
 
-elif a < 1: # wenn a kleiner als 1 ist
+elif x < 1: # wenn x kleiner als 1 ist
   print("a ist kleiner als 1")
 
 else: # wenn keine der vorherigen Bedingungen passt
@@ -49,11 +50,11 @@ else: # wenn keine der vorherigen Bedingungen passt
 **Achtung:** Ein Vergleich in Python ist ==, eine Zuweisung ist =
 
 ```python
-a = 5 # Ein Gleichheitszeichen ist eine Zuweisung
-if a == 5: # Zwei Gleichheitszeichen sind ein Vergleich
+a = 5 # ein Gleichheitszeichen ist eine Zuweisung
+if a == 5: # zwei Gleichheitszeichen sind ein Vergleich
   print("a ist gleich 5")
 
-elif a != 5: # Ein Ausrufezeichen bedeutet "nicht-gleich"
+elif a != 5: # ein Ausrufezeichen bedeutet "nicht-gleich"
   print("a ist nicht gleich 5")
 ```
 

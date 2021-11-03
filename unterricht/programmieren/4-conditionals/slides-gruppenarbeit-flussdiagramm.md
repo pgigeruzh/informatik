@@ -5,7 +5,7 @@ author: Peter Giger
 
 # Gruppenarbeit (ca. 10 Minuten) <i class="fas fa-users"></i>
 
-<h4>Erstellen sie (1) ein Flussdiagramm (2) Python-Code für ihr Szenario. Am Schluss (3) präsentieren/bewerten sie die Resultate ihrer MitschülerInnen.</h4>
+<h4>Erstellen sie (1) ein Flussdiagramm (2) Python-Code für ihr Szenario. Am Schluss (3) präsentieren sie ihre Resultate den MitschülerInnen.</h4>
 
 **Gruppe 1**: Sie stehen an einer Ampel. Wenn die Ampel rot ist, bleiben sie stehen. Wenn die Ampel orange ist, machen sie sich langsam bereit und wenn die Ampel grün ist, laufen sie über den Fussgängerstreifen.
 
