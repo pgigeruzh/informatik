@@ -20,7 +20,7 @@ In Python schreibt man "if Bedingung: dann". Die Bedingung ist dabei entweder Wa
 ```python
 note = 4.5
 
-if note >= 4 # wenn die note grösser gleich vier ist
+if note >= 4: # wenn die note grösser gleich vier ist
   print("Prüfung bestanden") # dann ist die Prüfung bestanden
   print("...") # alles in einer If-Bedingung muss eingerückt sein
 
@@ -38,13 +38,13 @@ Mit **elif** (Abkürzung für "else-if") und **else** (deutsch: sonst) können s
 
 ```python
 if x > 1: # wenn x grösser als 1 ist
-  print("a ist grösser als 1")
+  print("x ist grösser als 1")
 
 elif x < 1: # wenn x kleiner als 1 ist
-  print("a ist kleiner als 1")
+  print("x ist kleiner als 1")
 
 else: # wenn keine der vorherigen Bedingungen passt
-  print("a ist gleich 1")
+  print("x ist gleich 1")
 ```
 
 **Achtung:** Ein Vergleich in Python ist ==, eine Zuweisung ist =

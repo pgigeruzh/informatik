@@ -70,7 +70,7 @@
 <p>In Python schreibt man “if Bedingung: dann”. Die Bedingung ist dabei entweder Wahr oder Falsch (Boolean) z. B.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>note <span class="op">=</span> <span class="fl">4.5</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> note <span class="op">&gt;=</span> <span class="dv">4</span> <span class="co"># wenn die note grösser gleich vier ist</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> note <span class="op">&gt;=</span> <span class="dv">4</span>: <span class="co"># wenn die note grösser gleich vier ist</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;Prüfung bestanden&quot;</span>) <span class="co"># dann ist die Prüfung bestanden</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;...&quot;</span>) <span class="co"># alles in einer If-Bedingung muss eingerückt sein</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
@@ -85,13 +85,13 @@
 <h1>If-Elif-Else <i class="fas fa-code-branch"></i></h1>
 <p>Mit <strong>elif</strong> (Abkürzung für “else-if”) und <strong>else</strong> (deutsch: sonst) können sie mehrere Bedingungen verschachteln.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">1</span>: <span class="co"># wenn x grösser als 1 ist</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist grösser als 1&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;x ist grösser als 1&quot;</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> x <span class="op">&lt;</span> <span class="dv">1</span>: <span class="co"># wenn x kleiner als 1 ist</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist kleiner als 1&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;x ist kleiner als 1&quot;</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>: <span class="co"># wenn keine der vorherigen Bedingungen passt</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;a ist gleich 1&quot;</span>)</span></code></pre></div>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;x ist gleich 1&quot;</span>)</span></code></pre></div>
 <p><strong>Achtung:</strong> Ein Vergleich in Python ist ==, eine Zuweisung ist =</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">5</span> <span class="co"># ein Gleichheitszeichen ist eine Zuweisung</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> a <span class="op">==</span> <span class="dv">5</span>: <span class="co"># zwei Gleichheitszeichen sind ein Vergleich</span></span>
