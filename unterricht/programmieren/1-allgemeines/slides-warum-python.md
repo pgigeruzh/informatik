@@ -3,15 +3,6 @@ title: Warum Python?
 author: Peter Giger
 ---
 
-# Lernziele <i class="fas fa-bullseye"></i>
-
-> Sie verstehen den Unterschied zwischen Syntax und Semantik und können diesen anhand eines Beispiels in eigenen Worten beschreiben.
-
-> Sie verstehen den Unterschied zwischen kompilierten und interpretierten Programmiersprachen und können jeweils einen Vor- und Nachteil aufzählen.
-
-> Sie kennen den Unterschied zwischen Frontend und Backend und wissen, welche Geräte (Laptop, Server) jeweils gemeint sind.
-
-
 # Warum Python <i class="fas fa-question"></i>
 
 1. Einfacher Syntax
@@ -39,6 +30,16 @@ author: Peter Giger
 | ![](images/line.jpg){ height=250px } | ![](images/machine.jpg){ height=250px } | ![](images/sensor.jpg){ height=250px } |
 | ![](images/esp32.jpg){ height=250px } | ![](images/code.jpg){ height=250px } | <video src="images/movie.mov" controls height="250px"></video> |
 
+<!-- Archiv
+
+# Lernziele <i class="fas fa-bullseye"></i>
+
+> Sie verstehen den Unterschied zwischen Syntax und Semantik und können diesen anhand eines Beispiels in eigenen Worten beschreiben.
+
+> Sie verstehen den Unterschied zwischen kompilierten und interpretierten Programmiersprachen und können jeweils einen Vor- und Nachteil aufzählen.
+
+> Sie kennen den Unterschied zwischen Frontend und Backend und wissen, welche Geräte (Laptop, Server) jeweils gemeint sind.
+
 
 # Auftrag: Bearbeiten Sie folgende Themen <br> (3 Gruppen, ca. 15 Minuten) <i class="fas fa-users"></i>
 
@@ -47,7 +48,6 @@ author: Peter Giger
 - Gruppe 3: [Backend vs. Frontend](https://www.ironhack.com/de/webentwicklung/front-end-vs-back-end-unterschied)
 
 Eine (zufällige) Person pro Gruppe präsentiert ihr Thema
-
 
 <small><br>Tipp: Bleiben sie produktiv! Machen sie z. B. eine kurze Zusammenfassung, welche sie dann mit ihren MitschülerInnen teilen. Schauen sie auch in die "Prüfungsvorbereitung" und überprüfen sie, ob sie das Thema verstanden haben (inkl. Notieren der Antworten).</small>
 
@@ -59,3 +59,4 @@ Eine (zufällige) Person pro Gruppe präsentiert ihr Thema
 - Backend vs. Frontend:
   Das Frontend läuft auf einem Client (Handy, Laptop...), das Backend auf einem Server z. B. Google-Server inkl. Datenbanken etc.
 :::
+-->

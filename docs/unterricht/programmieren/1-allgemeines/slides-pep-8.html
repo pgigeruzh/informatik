@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - PEP 8 Style Guide</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="../../../assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/theme/beige.css">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .reveal p {
+      line-height: 1.1;
+      font-size: 0.9em;
+    }
+    .reveal li::marker {
+      font-size: 0.9em;
+    }
+    .reveal blockquote {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .article-only {
+      display: none !important;
+      height: 0px !important;
+      line-height: 0px !important;
+      font-size: 0px !important;
+    }
+    .reveal img, .reveal video, .reveal iframe {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+  <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- font awesome -->
+  <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="pep-8-style-guide-für-python-code" class="slide level1">
+<h1>PEP 8 – Style Guide für Python Code <i class="far fa-file-code"></i></h1>
+<p><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a> enthält Konvention, wie man “guten/schönen” Python-Code schreiben soll. Das hilft, damit andere Programmierer (und man selbst) den Code besser lesen können. Als Beispiel:</p>
+<blockquote>
+<p>"Function names should be lowercase, with words separated by underscores as necessary to improve readability.</p>
+<p>Variable names follow the same convention as function names.</p>
+<p>mixedCase is allowed only in contexts where that’s already the prevailing style, to retain backwards compatibility."</p>
+</blockquote>
+</section>
+<section id="pep-8-song" class="slide level1">
+<h1>PEP 8 Song <i class="fas fa-music"></i></h1>
+<p><a href="https://www.youtube.com/watch?v=hgI0p1zf31k">Youtube Link</a></p>
+<p>Gruppe 1: 0:11-0:22</p>
+<p>Gruppe 2: 0:33-0:45</p>
+<p>Gruppe 3: 0:56-1:02</p>
+<p>Gruppe 4: 1:02-1:07</p>
+<p>Gruppe 5: 1:13-1:28</p>
+<p>Gruppe 6: 1:29-1:40</p>
+<p>Gruppe 7: 1:40-1:52</p>
+<p>Gruppe 8: 2:03-2:14</p>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="../../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="../../../assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="../../../assets/reveal.js/plugin/math/math.js"></script>
+  <script src="../../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu]
+    });
+  </script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ title: "Einführung in die Programmierung"
 
 [0. Organisatorisches](0-organisatorisches/)
 
-[1. Warum Python?](1-warum-python/)
+[1. Allgemeines über Python](1-allgemeines/)
 
 [2. Installation von VSCode und Python](2-installation/)
 
