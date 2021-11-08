@@ -37,7 +37,7 @@ zum Thema Conditionals/Verzweigungen.
 >   print(i)
 > ```
 > 
-> [Lösungsvorschlag](files/prüfungsvorbereitung_1.drawio.png)
+> [Lösungsvorschlag Flussdiagramm](files/prüfungsvorbereitung_1.drawio.png)
 
 > Was ist der Output von diesem Programm? Übersetzen sie es in eine For-Schleife (wenn möglich) und erstellen sie ein Flussdiagramm dazu.
 > ```python
@@ -50,10 +50,29 @@ zum Thema Conditionals/Verzweigungen.
 >     print(i)
 > ```
 > 
-> [Lösungsvorschlag](files/prüfungsvorbereitung_2.drawio.png)
+> [Lösungsvorschlag Code](files/prüfungsvorbereitung_2.py)
+> 
+> [Lösungsvorschlag Flussdiagramm](files/prüfungsvorbereitung_2.drawio.png)
+
+> Erstellen sie ein Programm, welches eine Zahl quadriert. Dabei soll das Programm so lange ausgeführt werden, bis der Benutzer 'quit' eingibt.
+> 
+> ![](images/quadrat.png){ width=100% }
+> 
+> [Lösungsvorschlag](files/quadrat.py)
+
 
 > Erweitern sie das Login aus dem Auftrag "Conditionals", sodass das Konto nach 3 Fehlversuchen gesperrt wird.
 > 
 > ![](images/login_retry.png){ width=100% }
 > 
 > [Lösungsvorschlag](files/login_retry.py)
+
+> Erstellen sie ein Programm, welches als Input eine Zahl nimmt und daraus die Fibonacci-Folge berechnet. Erstellen sie zusätzlich ein Flussdiagramm dazu.
+>
+> Was ist die Fibonacci-Folge? [Hier Klicken (SimpleClub)](https://www.youtube.com/watch?v=fLuVeooxBqw)
+> 
+> ![](images/fibonacci.png){ width=100% }
+> 
+> [Lösungsvorschlag Code](files/fibonacci.py)
+> 
+> [Lösungsvorschlag Flussdiagramm](files/fibonacci.drawio.png)

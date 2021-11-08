@@ -11,9 +11,9 @@ author: Peter Giger
 
 # Was sind Loops? (Schleifen) <i class="fas fa-redo"></i>
 
-Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. Video-Loops auf [Youtube](https://www.youtube.com/watch?v=kdBAdHR4n7A) (Rechtsklick > Wiederholen)
+Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. aus der [Musik](https://www.youtube.com/watch?v=C0jEJL-RdPo)
 
-In Python gibt es zwei Arten von Loops:
+In Python gibt es zwei Arten von Loops, **While** und **For**:
 
 ```python
 # (1) While-Loop
@@ -40,7 +40,7 @@ for i in range(0, 5): # für jedes i von 0 bis 5
 
 
 # While-Loops in Python <i class="fas fa-redo"></i>
-Generell gilt: While-Loops können alles, was For-Loops können und noch mehr. Trotzdem sollte man in den meisten Fällen For-Loops verwenden.
+While-Loops können alles, was For-Loops können und noch mehr. Trotzdem sollte man in den meisten Fällen For-Loops verwenden (weniger fehleranfällig).
 ```python
 i = 5 # Zähler-Variable definieren
 while i < 10:
@@ -49,9 +49,6 @@ while i < 10:
 
 # Output: 5 6 7 8 9
 ```
-
-Die Bedingung ist, wie bei if-elif-else, ein Boolean:
-
 ```python
 while True: # Unendliche Schleife
   print("hallo")
@@ -112,6 +109,24 @@ print("fertig")
 - Demo
 :::
 
+# Auftrag: Stellen sie sich vor, sie seien wieder in der Primarschule <i class="fas fa-school"></i>
+
+![](images/primarschule.png){ height=130px }
+
+1. Die Lehrerin möchte, dass sie die Zahlen von 1 bis 1000 aufschreiben. Automatisieren sie diesen Auftrag.
+
+2. Die Lehrerin verlangt nun, dass sie von 1000 wieder rückwärts auf 1 zählen. Erstellen sie ein Programm.
+
+3. Nun möchte die Lehrerin auch noch, dass sie die 7er-Reihe bis 1000 (1x7, 2x7, 3x7...) aufschreiben. Erstellen sie wieder ein Programm.
+
+# Auftrag: Fahrplan Luzern - Engelberg <i class="fas fa-subway"></i>
+
+Der IR (Interregio) von Luzern nach Engelberg fährt nur 1x pro Stunde. Der erste Zug fährt um 6:12 und der letzte Zug um 20:12. Erstellen sie ein Programm, welches den Fahrplan ausgibt (ohne jeden Zug einzeln aufzuschreiben).
+
+|||
+| ----------------------------------- | ----------------------------------- |
+| ![](images/fahrplan.png){ height=400px } | ![](images/fahrplan_2.png){ height=400px } |
+
 
 # Auftrag: Prüfungssoftware Programmieren <i class="fas fa-shoe-prints"></i>
 
@@ -123,24 +138,6 @@ print("fertig")
 |||
 | ----------------------------------- | ----------------------------------- |
 | ![](images/exam_software.png){ height=200px } | ![](images/exam_software_2.png){ height=70px } |
-
-::: notes
-:::
-
-
-# Auftrag: Fibonacci-Folge Berechnen <i class="fas fa-shoe-prints"></i>
-
-Was ist die Fibonacci-Folge? [Hier Klicken (SimpleClub)](https://www.youtube.com/watch?v=fLuVeooxBqw)
-
-(1) Erstellen sie ein Programm, welches als Input eine Zahl $ n $ nimmt und daraus die Fibonacci-Folge berechnet.
-    
-      $ F_n = F_{n - 1} + F_{n - 2} $
-
-(2) Erstellen sie ein Flussdiagrammm dazu
-
-|||
-| ----------------------------------- | ----------------------------------- |
-| ![](images/fibonacci_2.jpg){ width=300px } | ![](images/fibonacci.png){ height=200px } |
 
 ::: notes
 :::

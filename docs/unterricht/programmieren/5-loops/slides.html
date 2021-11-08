@@ -63,8 +63,8 @@
 </section>
 <section id="was-sind-loops-schleifen" class="slide level1">
 <h1>Was sind Loops? (Schleifen) <i class="fas fa-redo"></i></h1>
-<p>Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. Video-Loops auf <a href="https://www.youtube.com/watch?v=kdBAdHR4n7A">Youtube</a> (Rechtsklick &gt; Wiederholen)</p>
-<p>In Python gibt es zwei Arten von Loops:</p>
+<p>Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. aus der <a href="https://www.youtube.com/watch?v=C0jEJL-RdPo">Musik</a></p>
+<p>In Python gibt es zwei Arten von Loops, <strong>While</strong> und <strong>For</strong>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) While-Loop</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">0</span></span>
@@ -85,14 +85,13 @@
 </section>
 <section id="while-loops-in-python" class="slide level1">
 <h1>While-Loops in Python <i class="fas fa-redo"></i></h1>
-<p>Generell gilt: While-Loops können alles, was For-Loops können und noch mehr. Trotzdem sollte man in den meisten Fällen For-Loops verwenden.</p>
+<p>While-Loops können alles, was For-Loops können und noch mehr. Trotzdem sollte man in den meisten Fällen For-Loops verwenden (weniger fehleranfällig).</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">5</span> <span class="co"># Zähler-Variable definieren</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="dv">10</span>:</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(i, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span> <span class="co"># Zähler-Variable erhöhen</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: 5 6 7 8 9</span></span></code></pre></div>
-<p>Die Bedingung ist, wie bei if-elif-else, ein Boolean:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>: <span class="co"># Unendliche Schleife</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;hallo&quot;</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -142,6 +141,27 @@
 </ul>
 </aside>
 </section>
+<section id="auftrag-stellen-sie-sich-vor-sie-seien-wieder-in-der-primarschule" class="slide level1">
+<h1>Auftrag: Stellen sie sich vor, sie seien wieder in der Primarschule <i class="fas fa-school"></i></h1>
+<p><img data-src="images/primarschule.png" height="130" /></p>
+<ol type="1">
+<li><p>Die Lehrerin möchte, dass sie die Zahlen von 1 bis 1000 aufschreiben. Automatisieren sie diesen Auftrag.</p></li>
+<li><p>Die Lehrerin verlangt nun, dass sie von 1000 wieder rückwärts auf 1 zählen. Erstellen sie ein Programm.</p></li>
+<li><p>Nun möchte die Lehrerin auch noch, dass sie die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…) aufschreiben. Erstellen sie wieder ein Programm.</p></li>
+</ol>
+</section>
+<section id="auftrag-fahrplan-luzern---engelberg" class="slide level1">
+<h1>Auftrag: Fahrplan Luzern - Engelberg <i class="fas fa-subway"></i></h1>
+<p>Der IR (Interregio) von Luzern nach Engelberg fährt nur 1x pro Stunde. Der erste Zug fährt um 6:12 und der letzte Zug um 20:12. Erstellen sie ein Programm, welches den Fahrplan ausgibt (ohne jeden Zug einzeln aufzuschreiben).</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/fahrplan.png" height="400" /></td>
+<td><img data-src="images/fahrplan_2.png" height="400" /></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="auftrag-prüfungssoftware-programmieren" class="slide level1">
 <h1>Auftrag: Prüfungssoftware Programmieren <i class="fas fa-shoe-prints"></i></h1>
 <ol type="1">
@@ -153,26 +173,6 @@
 <tr class="odd">
 <td><img data-src="images/exam_software.png" height="200" /></td>
 <td><img data-src="images/exam_software_2.png" height="70" /></td>
-</tr>
-</tbody>
-</table>
-<aside class="notes">
-
-</aside>
-</section>
-<section id="auftrag-fibonacci-folge-berechnen" class="slide level1">
-<h1>Auftrag: Fibonacci-Folge Berechnen <i class="fas fa-shoe-prints"></i></h1>
-<p>Was ist die Fibonacci-Folge? <a href="https://www.youtube.com/watch?v=fLuVeooxBqw">Hier Klicken (SimpleClub)</a></p>
-<ol type="1">
-<li><p>Erstellen sie ein Programm, welches als Input eine Zahl $ n $ nimmt und daraus die Fibonacci-Folge berechnet.</p>
-<p>$ F_n = F_{n - 1} + F_{n - 2} $</p></li>
-<li><p>Erstellen sie ein Flussdiagrammm dazu</p></li>
-</ol>
-<table>
-<tbody>
-<tr class="odd">
-<td><img data-src="images/fibonacci_2.jpg" width="300" /></td>
-<td><img data-src="images/fibonacci.png" height="200" /></td>
 </tr>
 </tbody>
 </table>
