@@ -11,7 +11,7 @@ author: Peter Giger
 
 # Was sind Loops? (Schleifen) <i class="fas fa-redo"></i>
 
-Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. aus der [Musik](https://www.youtube.com/watch?v=C0jEJL-RdPo). In Python gibt es zwei Arten von Loops:
+Mit einem Loop können sie Programmcode wiederholen. In Python gibt es zwei Arten von Loops:
 
 **While-Loop**
 ```python
