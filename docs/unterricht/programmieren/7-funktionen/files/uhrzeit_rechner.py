@@ -25,8 +25,8 @@ def uhrzeit_minuten_addieren(stunden, minuten, summand):
     print("--------------------------------")
 
 
-uhrzeit_minuten_addieren(16, 40, 0)
-uhrzeit_minuten_addieren(16, 40, 20)
+#uhrzeit_minuten_addieren(16, 40, 0)
+#uhrzeit_minuten_addieren(16, 40, 20)
 uhrzeit_minuten_addieren(16, 40, 200)
-uhrzeit_minuten_addieren(16, 40, 2000)
-uhrzeit_minuten_addieren(16, 10, 1111)
+#uhrzeit_minuten_addieren(16, 40, 2000)
+#uhrzeit_minuten_addieren(16, 10, 1111)

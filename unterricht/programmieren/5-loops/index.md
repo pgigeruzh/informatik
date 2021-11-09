@@ -23,7 +23,7 @@ Auf der Website von **Sylvia Lange** finden sie noch weitere (gute) Übungsaufga
 [[18]](https://sylvialange.de/python/python3/schleifen/Fakultaet.py)
 [[19]](https://sylvialange.de/python/python3/schleifen/Zweierpotenz.py)
 [[20]](https://sylvialange.de/python/python3/schleifen/SterneRechteck.py)
-zum Thema Conditionals/Verzweigungen.
+zum Thema Loops/Schleifen.
 
 
 # Prüfungsvorbereitung

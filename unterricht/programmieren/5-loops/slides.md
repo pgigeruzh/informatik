@@ -11,49 +11,41 @@ author: Peter Giger
 
 # Was sind Loops? (Schleifen) <i class="fas fa-redo"></i>
 
-Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. aus der [Musik](https://www.youtube.com/watch?v=C0jEJL-RdPo)
+Loops (Wiederholungen) kennen sie bereits aus ihrem Alltag, z. B. aus der [Musik](https://www.youtube.com/watch?v=C0jEJL-RdPo). In Python gibt es zwei Arten von Loops:
 
-In Python gibt es zwei Arten von Loops, **While** und **For**:
-
+**While-Loop**
 ```python
-# (1) While-Loop
-
-i = 0
-while i < 5: # solange i < 5
-  print("hallo", end=" ") # print ohne neue Zeile
+i = 0 # Braucht eine Zähler-Variable
+while i < 5: # Solange i < 5
+  print(i)
   i = i + 1 # i um eins erhöhen
 
-# Output: hallo hallo hallo hallo hallo
+# Output: 0 1 2 3 4
 ```
 
+**For-Loop**
 ```python
-# (2) For-Loop
+for i in range(0, 5): # Für jedes i von 0 bis 5
+  print(i)
 
-for i in range(0, 5): # für jedes i von 0 bis 5
-  print("hallo", end=" ") # print ohne neue Zeile
-
-# Output: hallo hallo hallo hallo hallo
+# Output: 0 1 2 3 4
 ```
 
 ::: notes
 :::
 
 
-# While-Loops in Python <i class="fas fa-redo"></i>
-While-Loops können alles, was For-Loops können und noch mehr. Trotzdem sollte man in den meisten Fällen For-Loops verwenden (weniger fehleranfällig).
+# While-Loops vs. For-Loops <i class="fas fa-redo"></i>
+While-Loops können alles, was For-Loops können und noch mehr. Trotzdem sollte man in den meisten Fällen For-Loops verwenden, da diese weniger fehleranfällig sind.
+
+<br>
+Warum sind For-Loops weniger fehleranfällig? Der Bereich (englisch: range) muss mit einer Funktion "range(von, bis)" vorgegeben werden.
+
 ```python
-i = 5 # Zähler-Variable definieren
-while i < 10:
-  print(i, end=" ")
-  i = i + 1 # Zähler-Variable erhöhen
+for i in range(5, 10): # range(von, bis)
+  print(i)
 
 # Output: 5 6 7 8 9
-```
-```python
-while True: # Unendliche Schleife
-  print("hallo")
-
-# Output: hallo hallo hallo hallo hallo hallo hallo hallo ...
 ```
 
 ::: notes
@@ -62,26 +54,30 @@ while True: # Unendliche Schleife
 :::
 
 
-# For-Loops in Python <i class="fas fa-redo"></i>
+# Unendliche Loops & Loops verlassen <i class="fas fa-times"></i>
 
-For-Loops sind "Syntactic Sugar" für While-Loops, wobei die Funktion "range(von, bis)" notwendig ist. Die Zähler-Variable (z. B. i) iteriert dabei durch den "range".
+Mit "while True:" erzeugt man einen **unendlichen** Loop:
 
 ```python
-for i in range(5, 10):
-  print(i, end=" ")
+while True: # Unendliche Schleife
+  print("hallo")
 
-# Output: 5 6 7 8 9
+# Output: hallo hallo hallo hallo hallo hallo hallo hallo ...
 ```
 
-Mit dem "break"-Befehl kann der Loop verlassen werden (funktioniert auch bei While-Loops)
+<small>(Tipp: Mit "ctrl-c" brechen sie ein Programm ab, fall sie in einem unendlichen Loop stecken bleiben.)</small>
+
+Mit "break" kann man einen Loop wieder **verlassen**
 
 ```python
-for i in range(5, 10):
-  if i == 8:
-    break # Loop verlassen
-  print(i, end=" ")
+i = 0
+while True:
+  print(i)
+  if i == 100:
+	  break # Loop verlassen
+  i = i + 1
 
-# Output: 5 6 7
+# Output: 0 1 2 4 5 ... 98 99 100
 ```
 
 ::: notes
@@ -121,23 +117,26 @@ print("fertig")
 
 # Auftrag: Fahrplan Luzern - Engelberg <i class="fas fa-subway"></i>
 
-Der IR (Interregio) von Luzern nach Engelberg fährt nur 1x pro Stunde. Der erste Zug fährt um 6:12 und der letzte Zug um 20:12. Erstellen sie ein Programm, welches den Fahrplan ausgibt (ohne jeden Zug einzeln aufzuschreiben).
+Der IR (Interregio) von Luzern nach Engelberg fährt nur 1x pro Stunde. Der erste Zug fährt um 6:12 und der letzte Zug um 20:12. 
+
+1. Erstellen sie ein Programm, welches den Fahrplan ausgibt (ohne jeden Zug einzeln aufzuschreiben)
+2. Erstellen sie das Flussdiagramm dazu
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/fahrplan.png){ height=400px } | ![](images/fahrplan_2.png){ height=400px } |
+| ![](images/fahrplan.png){ height=250px } | ![](images/fahrplan_2.png){ height=300px } |
 
 
 # Auftrag: Prüfungssoftware Programmieren <i class="fas fa-shoe-prints"></i>
 
-(1) Programmieren sie eine Software, welche eine Frage stellt (z. B. Was ist die Hauptstadt der Schweiz?) und nach 10 falschen Antworten "Prüfung leider nicht bestanden" ausgibt. Wenn die Frage richtig beantwortet wird, soll "Gratulation!" ausgegeben werden. <br><br><small>Tipp: Mit "ctrl-c" brechen sie die Ausführung des Programms ab</small>
+(1) Programmieren sie eine Software, welche eine Frage stellt und nach 3 Fehlversuchen "Prüfung leider nicht bestanden" ausgibt (inkl. verbleibende Versuche). Wenn die Frage richtig beantwortet wird, soll "Gratulation!" ausgegeben werden.
 
 (2) Erstellen sie das Flussdiagramm dazu
 
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/exam_software.png){ height=200px } | ![](images/exam_software_2.png){ height=70px } |
+| ![](images/exam_software.png){ height=300px } | ![](images/exam_software_2.png){ height=200px } |
 
 ::: notes
 :::

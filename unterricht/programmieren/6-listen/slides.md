@@ -20,7 +20,7 @@ Eine Liste speichert mehrere Elemente, z. B. eine Einkaufsliste:
 In Python werden Listen mit eckigen Klammern [] geschrieben:
 
 ```pythons
-x = ["Brot", "Nutella", "Milch"] # definition einer Liste
+x = ["Brot", "Nutella", "Milch",] # Definition einer Liste
 
 print(x) # Output: "['Brot', 'Nutella', 'Milch']"
 ```
@@ -31,12 +31,10 @@ print(x) # Output: "['Brot', 'Nutella', 'Milch']"
 
 # Zugriff auf Listenelemente <i class="fas fa-sync-alt"></i>
 
-Der Zugriff auf Listenelemente kann auf zwei verschiedene Arten erfolgen.
-
-Direkt:
+Der Zugriff auf Listenelemente erfolgt mit einem **Index**. [**0**] ist dabei das erste Element, [**1**] das zweite etc.
 
 ```python
-einkaufsliste = ["Brot", "Nutella", "Milch"]
+einkaufsliste = ["Brot", "Nutella", "Milch",]
 
 print(einkaufsliste[0]) # Output: Brot
 print(einkaufsliste[1]) # Output: Nutella
@@ -44,14 +42,36 @@ print(einkaufsliste[2]) # Output: Milch
 print(einkaufsliste[3]) # Output: IndexError: list index out of range
 ```
 
-Loop:
+::: notes
+Informatiker fangen bei 0 an zu zählen.
+:::
+
+Die Länge einer Liste erhält man mit der Funktion **len()**
 
 ```python
-for element in einkaufsliste: # Output: Brot, Nutella, Milch
-    print(element)
-# ---- oder ---- #
+laenge = len(einkaufsliste) # Länge der Liste
+print(laenge) # Output: 3
+```
+
+# Listen & Loops <i class="fas fa-redo"></i>
+
+Listen sind iterierbar, d. h. folgendes funktioniert und sollte bevorzugt werden:
+
+```python
+for element in einkaufsliste:
+  print(element)
+
+# Output: Brot, Nutella, Milch
+```
+
+Wenn jedoch der Index benötigt wird, kann auch ein "normaler" Loop mit der len()-Funktion verwendet werden:
+
+```python
 for i in range(len(einkaufsliste)): # len() ist die Listenlänge
   print(einkaufsliste[i])
+  print(i) # Vorteil: Man hat Zugriff auf den Index i
+
+# Output: Brot 0, Nutella 1, Milch 2
 ```
 
 ::: note
@@ -94,7 +114,7 @@ Programmieren sie eine Einkaufsliste, bei der sie Artikel hinzufügen können. D
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/einkaufswagen.jpg){ height=350px } | ![](images/einkaufsliste.png){ height=350px } |
+| ![](images/einkaufswagen.jpg){ height=300px } | ![](images/einkaufsliste.png){ height=350px } |
 
 <small>Tipp: Mit "while: True" wird eine Schleife unendlich oft ausgeführt und mit CTRL-C können sie das Programm trotzdem terminieren</small>
 
@@ -108,7 +128,7 @@ Programmieren sie einen Notendurchschnittsrechner. Das Ziel: Sie können ihre No
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/graduation.png){ height=350px } | ![](images/notendurchschnittsrechner.png){ height=350px } |
+| ![](images/graduation.png){ height=250px } | ![](images/notendurchschnittsrechner.png){ height=350px } |
 
 ::: notes
 :::

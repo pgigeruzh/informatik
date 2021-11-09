@@ -143,7 +143,7 @@ else:
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/mac_login.jpg){ width=300px } | ![](images/login_without_username.png){ height=100px } |
+| ![](images/mac_login.jpg){ width=300px } | ![](images/login_without_username.png){ height=300px } |
 
 ::: notes
 :::
@@ -157,7 +157,7 @@ else:
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/instagram_login.png){ width=400px } | ![](images/login_with_username.png){ height=100px } |
+| ![](images/instagram_login.png){ width=400px } | ![](images/login_with_username.png){ height=300px } |
 
 ::: notes
 :::

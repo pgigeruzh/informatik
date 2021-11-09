@@ -113,11 +113,12 @@ modifizierte_funktion(4) # Output: 16 --> anderer Output
 # Auftrag: Brief Adressieren <i class="fas fa-shoe-prints"></i>
 
 (1) Erstellen sie eine Funktion, welche eine korrekt formatierte Adresse ausgibt. Rufen sie dann die Funktion auf und geben sie mind. 2 verschiedene Adressen aus. Die Funktion soll folgende Argumente besitzen:  
-Vorname, Name, Strasse, Strassennr, Plz, Ort
+
+**Vorname, Name, Strasse, Strassennr, Plz, Ort**
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/brief.png){ height=200px } | ![](images/brief_adresse.png){ height=200px } |
+| ![](images/brief.png){ height=80px } | ![](images/brief_adresse.png){ height=250px } |
 
 ::: notes
 :::
@@ -138,7 +139,7 @@ uhrzeit_minuten_addieren(16, 10, 1111) # 16:10 + 1111 Min = 10:41
 
 |||
 | ----------------------------------- | ----------------------------------- |
-| ![](images/uhren.jpg){ height=150px } | ![](images/uhrzeit_rechner.png){ height=150px } |
+| ![](images/uhren.jpg){ height=80px } | ![](images/uhrzeit_rechner.png){ height=220px } |
 
 <small>(Tipp: Mit diesem [Tool](https://www.timeanddate.com/date/timeadd.html) können sie schauen, ob ihre Implementation das gleiche Resultat liefert)</small>
 
