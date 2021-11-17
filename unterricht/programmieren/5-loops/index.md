@@ -7,6 +7,7 @@ author: Peter Giger
 
 [Slides](slides.html)
 
+[Gruppenarbeit Flussdiagramm](slides-gruppenarbeit-flussdiagramm.html)
 
 # Hilfreiche Links
 
