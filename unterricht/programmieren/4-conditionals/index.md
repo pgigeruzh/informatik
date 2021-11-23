@@ -31,6 +31,14 @@ zum Thema Conditionals/Verzweigungen.
 
 # Prüfungsvorbereitung
 
+> Lösungsvorschlag Aufträge
+> 
+> [Lösungsvorschlag Login I](files/login_without_username.py)
+>
+> [Lösungsvorschlag Login II](files/login_with_username.py)
+>
+> [Lösungsvorschlag Login II Flussdiagramm](files/login_with_username.drawio.png)
+
 > Was ist der Output von diesem Programm? Erstellen sie ein Flussdiagramm dazu.
 > ```python
 > x = "Hello"

@@ -23,6 +23,12 @@ zum Thema Conditionals/Verzweigungen.
 
 # Prüfungsvorbereitung
 
+> Lösungsvorschlag Aufträge
+> 
+> [Lösungsvorschlag Einkaufsliste](files/einkaufsliste.py)
+>
+> [Lösungsvorschlag Notendurchschnittsrechner](files/notendurchschnitt.py)
+
 > Was macht diese Programm und was ist der Output?
 > ```python
 > x = [6, 3, 8, 5, 7, 2, 4, 0, 5]

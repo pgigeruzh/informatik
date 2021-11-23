@@ -19,6 +19,12 @@ Die Plattform **W3Schools** bietet sich als Nachschlagewerk an (in Englisch). Hi
 
 # Prüfungsvorbereitung
 
+> Lösungsvorschlag Aufträge
+> 
+> [Lösungsvorschlag Brief](files/brief_adresse.py)
+>
+> [Lösungsvorschlag Uhrzeit](files/uhrzeit_rechner.py)
+
 > Was ist der Output von diesem Programm?
 > ```python
 > def meine_funktion(x, y, z):

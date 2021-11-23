@@ -9,16 +9,6 @@ author: Peter Giger
 
 [Gruppenarbeit Flussdiagramm](slides-gruppenarbeit-flussdiagramm.html)
 
-# Lösungsvorschläge Aufträge
-
-[Lösungsvorschlag Primarschule](files/primarschule.py)
-
-[Lösungsvorschlag Fahrplan](files/fahrplan.py)
-
-[Lösungsvorschlag Prüfungssoftware](files/prüfungssoftware.py)
-
-[Lösungsvorschlag Prüfungssoftware Flussdiagramm](files/prüfungssoftware.drawio.png)
-
 
 # Hilfreiche Links
 

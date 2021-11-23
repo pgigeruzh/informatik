@@ -26,6 +26,10 @@ zum Thema Variablen.
 
 # Prüfungsvorbereitung
 
+> Lösungsvorschlag Aufträge
+> 
+> [Lösungsvorschlag Fuss](files/cm_to_feet.py)
+
 > Nennen sie die vier wichtigsten Datentypen und geben sie je ein Beispiel dazu.
 
 > Was ist der Output von diesem Programm?
