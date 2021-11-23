@@ -9,6 +9,17 @@ author: Peter Giger
 
 [Gruppenarbeit Flussdiagramm](slides-gruppenarbeit-flussdiagramm.html)
 
+# Lösungsvorschläge Aufträge
+
+[Lösungsvorschlag Primarschule](files/primarschule.py)
+
+[Lösungsvorschlag Fahrplan](files/fahrplan.py)
+
+[Lösungsvorschlag Prüfungssoftware](files/prüfungssoftware.py)
+
+[Lösungsvorschlag Prüfungssoftware Flussdiagramm](files/prüfungssoftware.drawio.png)
+
+
 # Hilfreiche Links
 
 **Wichtig:** Verbringen sie nicht zu viel Zeit mit der Theorie. Stundenlang Videos schauen oder Texte lesen, wird sie nicht weiterbringen. Beim Programmieren geht es um das "Können" und nicht um das "Wissen". Deshalb empfehle ich ihnen, selber zu experimentieren und viel zu üben (z. B. mit den Aufträgen oder eigenen Ideen/Projekten).
@@ -28,6 +39,16 @@ zum Thema Loops/Schleifen.
 
 
 # Prüfungsvorbereitung
+
+> Lösungsvorschlag Aufträge
+> 
+> [Lösungsvorschlag Primarschule](files/primarschule.py)
+> 
+> [Lösungsvorschlag Fahrplan](files/fahrplan.py)
+> 
+> [Lösungsvorschlag Prüfungssoftware](files/prüfungssoftware.py)
+> 
+> [Lösungsvorschlag Prüfungssoftware Flussdiagramm](files/prüfungssoftware.drawio.png)
 
 > Was ist der Output von diesem Programm? Übersetzen sie es in eine For-Schleife (wenn möglich) und erstellen sie ein Flussdiagramm dazu.
 > ```python
