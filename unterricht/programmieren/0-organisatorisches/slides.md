@@ -9,10 +9,17 @@ author: Peter Giger
   
 - Dauer <i class="fas fa-calendar-alt"></i>: Okt. - Dez. (ca. 6 Doppellektionen)
   
-- Prüfung <i class="fas fa-paste"></i>: Schriftlich auf Papier <br>
-(ähnliche Aufgaben wie in den Aufträgen bzw. in der "Prüfungsvorbereitung")
+- Prüfung <i class="fas fa-paste"></i>: Schriftlich auf Papier
+
+  <i class="fas fa-angle-right"></i> Ähnlich wie die Aufträge/Prüfungsvorbereitung
+
+  <i class="fas fa-angle-right"></i> Spick mit 2 A4-Seiten (beidseitig) erlaubt
   
-- (Un)angesagte Zwischenprüfung(en) <i class="fas fa-bolt"></i>: Ca. 5-10 Minuten
+- (Un)angesagte Zwischenprüfung(en) <i class="fas fa-bolt"></i>
+
+  <i class="fas fa-angle-right"></i> Ca. 10-30 Minuten
+
+  <i class="fas fa-angle-right"></i> Spick mit 1 A4-Seite (beidseitig) erlaubt
 
 ::: notes
 :::
