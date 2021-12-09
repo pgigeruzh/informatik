@@ -52,7 +52,11 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section id="warum-python" class="slide level1">
+      <section id="was-ist-programmieren" class="slide level1">
+<h1>Was ist Programmieren? <i class="fas fa-code"></i></h1>
+<p><img data-src="images/programming.drawio.png" width="700" /></p>
+</section>
+<section id="warum-python" class="slide level1">
 <h1>Warum Python <i class="fas fa-question"></i></h1>
 <ol type="1">
 <li><p>Einfacher Syntax</p>
@@ -75,6 +79,17 @@
 <table>
 <tbody>
 <tr class="odd">
+<td><img data-src="images/paraglider.jpg" height="500" /></td>
+<td><img data-src="images/paraglider_line.jpg" height="500" /></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ein-beispielprojekt-von-mir-gleitschirm-leinenreissmaschine-1" class="slide level1">
+<h1>Ein Beispielprojekt von mir: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i></h1>
+<table>
+<tbody>
+<tr class="odd">
 <td><img data-src="images/line.jpg" height="250" /></td>
 <td><img data-src="images/machine.jpg" height="250" /></td>
 <td><img data-src="images/sensor.jpg" height="250" /></td>
@@ -86,6 +101,39 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="ausgabe-gleitschirm-leinenreissmaschine" class="slide level1">
+<h1>Ausgabe: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i></h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">------</span> Start Measurement <span class="at">------</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">3</span> kg</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">10</span> kg</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">30</span> kg</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">70</span> kg</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">120</span> kg</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">160</span> kg</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">190</span> kg <span class="co"># Max. Zugfestigkeit</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ex">70</span> kg</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="ex">20</span> kg</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">------</span> End Measurement <span class="at">------</span></span></code></pre></div>
+</section>
+<section id="vereinfachter-code-gleitschirm-leinenreissmaschine" class="slide level1">
+<h1>Vereinfachter Code: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i></h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    kg <span class="op">=</span> driver.read() <span class="co"># Sensorwert auslesen (in kg)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (kg <span class="op">&gt;</span> <span class="fl">3.0</span>) <span class="kw">and</span> (kgPrev <span class="op">&lt;</span> <span class="fl">3.0</span>):</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Zunehmender Leinenzug</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;------ Start Measurement ------&quot;</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> (kg <span class="op">&lt;</span> <span class="fl">3.0</span>) <span class="kw">and</span> (kgPrev <span class="op">&gt;</span> <span class="fl">3.0</span>):</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Abnehmender Leinenzug</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;------ End Measurement --------&quot;</span>)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> (kg <span class="op">&gt;</span> <span class="fl">3.0</span>):</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Werte über 3 kg sollen ausgegeben werden</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;kg: &quot;</span> <span class="op">+</span> <span class="bu">str</span>(kg))</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    kgPrev <span class="op">=</span> kg <span class="co"># Vorherigen Wert aktualisieren</span></span></code></pre></div>
 <!-- Archiv
 
 # Lernziele <i class="fas fa-bullseye"></i>

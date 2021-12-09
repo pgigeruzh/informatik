@@ -7,8 +7,6 @@ author: Peter Giger
 
 [Warum Python?](slides-warum-python.html)
 
-[PEP 8 Style Guide](slides-pep-8.html)
-
 <!--
 # Prüfungsvorbereitung
 > Tom sagt einer Mitschülerin, dass sie "fett" ist. Sie ist sehr beleidigt. Tom versteht die Welt nicht mehr, da er mit "fett" eigentlich "cool" gemeint hat. Ist das ein Syntax- oder Semantikfehler?

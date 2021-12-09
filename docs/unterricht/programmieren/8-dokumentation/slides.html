@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - Dokumentation und Veröffentlichung von Code</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="../../../assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="../../../assets/reveal.js/theme/beige.css">
+  <style>
+    .reveal h1 {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    .reveal p {
+      line-height: 1.1;
+      font-size: 0.9em;
+    }
+    .reveal li::marker {
+      font-size: 0.9em;
+    }
+    .reveal blockquote {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+    .article-only {
+      display: none !important;
+      height: 0px !important;
+      line-height: 0px !important;
+      font-size: 0px !important;
+    }
+    .reveal img, .reveal video, .reveal iframe {
+      margin: 0 !important;
+    }
+  </style>
+
+  <!-- highlight.js -->
+  <link rel="stylesheet" href="../../../assets/hightlight.js/default.min.css">
+  <script src="../../../assets/hightlight.js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- font awesome -->
+  <script defer src="../../../assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="lernziele" class="slide level1">
+<h1>Lernziele <i class="fas fa-bullseye"></i></h1>
+<blockquote>
+<p>Sie wissen, was PEP 8 ist und können einfachen Code nach diesem Standard formatieren</p>
+</blockquote>
+<blockquote>
+<p>Sie kennen die Begriffe Git, GitHub, Open-Source Software, Markdown und können diese anhand eines Beispiels in Verbindung setzten</p>
+</blockquote>
+<blockquote>
+<p>Sie können ihren eigenen Code (inkl. Dokumentation) auf GitHub veröffentlichen</p>
+</blockquote>
+</section>
+<section id="experiment---was-macht-dieser-algorithmus" class="slide level1">
+<h1>Experiment - Was macht dieser Algorithmus? <i class="fas fa-terminal"></i></h1>
+<p><br> <a href="https://timer.onlineclock.net">Timer <i class="far fa-clock"></i></a> (1 Min.) <br> <br></p>
+<p>Klicken Sie auf den folgenden Link und versuchen Sie <strong>alleine</strong> herauszufinden, was der Algorithmus genau macht: <br> <br></p>
+<p><a href="https://allocate.monster/STOZYTST">https://allocate.monster/STOZYTST</a></p>
+</section>
+<section id="pep-8-style-guide-für-python-code" class="slide level1">
+<h1>PEP 8 – Style Guide für Python Code <i class="far fa-file-code"></i></h1>
+<p><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a> enthält Konvention, wie man “guten/schönen” Python-Code schreiben soll. Das hilft, damit andere Programmierer (und man selbst) den Code besser lesen können. Als Beispiel:</p>
+<blockquote>
+<p>"Function names should be lowercase, with words separated by underscores as necessary to improve readability.</p>
+<p>Variable names follow the same convention as function names.</p>
+<p>mixedCase is allowed only in contexts where that’s already the prevailing style, to retain backwards compatibility."</p>
+</blockquote>
+</section>
+<section id="pep-8-das-wichtigste" class="slide level1">
+<h1>PEP 8 – Das Wichtigste</h1>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 84%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Zeilenlänge:</td>
+<td>Max. 79 Zeichen</td>
+</tr>
+<tr class="even">
+<td>Variablennamen:</td>
+<td>Kleingeschrieben mit Unterstrich oder camelCase z. B. kebab_stand oder kebabStand</td>
+</tr>
+<tr class="odd">
+<td>Leerzeichen:</td>
+<td>Ein Leerzeichen zwischen Operatoren z. B. x = 5 und nicht x=5</td>
+</tr>
+<tr class="even">
+<td>Kommentare:</td>
+<td>Ganze Sätze und das erste Wort grossgeschrieben z. B. # Das ist ein Kommentar</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pep-8-beispiel-zeilenlänge" class="slide level1">
+<h1>PEP 8: Beispiel Zeilenlänge</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Geben Sie eine Zahl ein: &quot;</span>))</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Mehr als 79 Zeichen (83 Zeichen mit Leerzeichen)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Geben Sie hier eine Zahl ein, welche über 10 und unter 20 ist: &quot;</span>))</span></code></pre></div>
+</section>
+<section id="pep-8-beispiel-variablennamen" class="slide level1">
+<h1>PEP 8: Beispiel Variablennamen</h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>anzahl_der_schueler <span class="op">=</span> <span class="dv">17</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Auch gut, aber die veraltete Schreibweise</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>anzahlDerSchueler <span class="op">=</span> <span class="dv">17</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Nicht kleingeschrieben</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Anzahl_der_Schueler <span class="op">=</span> <span class="dv">17</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Der Variablenname soll selbsterklärend sein</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">17</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausnahme: Loops und andere temporäre Variablen</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>(i)</span></code></pre></div>
+</section>
+<section id="pep-8-beispiel-leerzeichen" class="slide level1">
+<h1>PEP 8: Beispiel Leerzeichen</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="dv">10</span>:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>   i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Kein Leerzeichen zwischen den Operatoren</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i<span class="op">&lt;</span><span class="dv">10</span>:</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>   i<span class="op">=</span>i<span class="op">+</span><span class="dv">1</span></span></code></pre></div>
+</section>
+<section id="pep-8-kommentare" class="slide level1">
+<h1>PEP 8: Kommentare</h1>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dieser Loop berechnet die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) Ganze Sätze</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) Erste Wort muss gross sein</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># (3) Kommentare sollen helfen, den Code zu verstehen.</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     z. B. &quot;berechne (i+1)*7&quot; steht bereits im Code,</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     dann braucht es keinen Kommentar dafür.</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># loop bis 1000</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>) <span class="co"># berechne (i+1)*7</span></span></code></pre></div>
+</section>
+<section id="play-kahoot" class="slide level1">
+<h1><a href="https://kahoot.it/">Play Kahoot!</a></h1>
+</section>
+<section id="was-ist-open-source-software-was-ist-markdown" class="slide level1">
+<h1>Was ist Open-Source Software? <br> Was ist Markdown? <i class="fas fa-lock-open"></i></h1>
+<p>Umfrage: <a href="https://www.menti.com/j8io3tpphy">hier klicken</a></p>
+<aside class="notes">
+<ul>
+<li>“Open Source” bedeutet, dass der Quellcode einer Software offen und frei zugänglich ist.</li>
+<li>Open Source-Anwendungen sind oft kostenlos. Allerdings handelt es sich nicht um einen geschützten Begriff und es gibt keine Garantie, dass Sie solche Programme gratis erhalten.</li>
+</ul>
+</aside>
+</section>
+<section id="was-ist-git" class="slide level1">
+<h1>Was ist Git? <i class="fas fa-code-branch"></i></h1>
+<ul>
+<li>Kollaborations- und Versionsverwaltungstool für Softwareentwickler (vgl. Google Docs)</li>
+<li>2005 von Linux-Gründer Linus Torvalds entwickelt</li>
+<li>Konsolenanwendung, aber es gibt auch GUIs</li>
+<li>De-Facto Standard in der Softwareindustrie</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/git_cli.png" height="300" /></td>
+<td><img data-src="images/git_gui.png" height="350" /></td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<ul>
+<li>Früher: E-Mails</li>
+<li>Demo: Code Dokumentieren in Google Docs (mit 20 Personen)</li>
+<li>Git vs. Google Docs: Der Code wird bei Google Docs “live” bearbeitet, also kann es passieren, dass er plötzlich nicht mehr funktioniert. Für grössere Projekte wie z. B. der Linux-Kernel (27 Mio Zeilen Code, 21’000 Authoren) nicht mehr praktikabel.</li>
+</ul>
+</aside>
+</section>
+<section id="was-ist-github" class="slide level1">
+<h1>Was ist GitHub? <i class="fab fa-github"></i></h1>
+<ul>
+<li>Hosting Service für Git <br> (also eine Website, welche einen Git-Server zur Verfügung stellt)</li>
+<li>De-Facto Standard für Open-Source Software (Linux, LibreOffice…)</li>
+</ul>
+<p><img data-src="images/github_startpage.png" height="350" /></p>
+<aside class="notes">
+
+</aside>
+</section>
+<section id="live-auftrag-github-account-erstellen" class="slide level1">
+<h1>Live-Auftrag: GitHub Account Erstellen <i class="fas fa-shoe-prints"></i></h1>
+<p>Erstellen Sie einen Account auf <a href="https://github.com">GitHub</a> (Sign up). Die E-Mail-Adresse muss dabei echt sein, da Ihnen ein Verifizierungscode zugesendet wird.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/github_signup_1.png" height="350" /></td>
+<td><img data-src="images/github_signup_2.png" height="350" /></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="was-ist-ein-github-repository" class="slide level1">
+<h1>Was ist ein Git(Hub) Repository? <i class="fab fa-github"></i></h1>
+<ul>
+<li>Ein Repository (Repo) ist ähnlich wie ein Ordner</li>
+<li>Generell gilt: 1 Projekt = 1 Repositorys</li>
+<li>Ein Repo kann öffentlich oder privat sein</li>
+</ul>
+<p><small>Beispiel Linux:</small></p>
+<p><img data-src="images/github_repo_linux.png" height="350" /></p>
+</section>
+<section id="live-auftrag-github-repo-erstellen" class="slide level1">
+<h1>Live-Auftrag: GitHub Repo Erstellen <i class="fas fa-shoe-prints"></i></h1>
+<p>Erstellen Sie nun ein GitHub Repositoy (create repository). Geben Sie dafür einen passenden Namen ein und vergessen Sie nicht, “Add a README file” zu wählen.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/github_repo_1.png" height="350" /></td>
+<td><img data-src="images/github_repo_2.png" height="350" /></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="github-markdown-und-das-readme.md" class="slide level1">
+<h1>GitHub, Markdown und das README.md <i class="fab fa-github"></i></h1>
+<ul>
+<li>Dokumentationen auf GitHub werden in Markdown geschrieben</li>
+<li>Das README.md beinhaltet die Dokumentation für das gesamte Repo. Beispiele: <a href="https://github.com/amitmerchant1990/electron-markdownify#readme">Markdownify</a>, <a href="https://github.com/gitpoint/git-point#readme">GitPoint</a></li>
+<li>Markdown Syntax vergessen? Siehe <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Cheatsheet</a></li>
+</ul>
+<p><small>Beispiel LibreOffice:</small></p>
+<p><img data-src="images/github_libreoffice_markdown.png" height="250" /></p>
+<aside class="notes">
+<ul>
+<li>GitHub Flavored Markdown</li>
+<li>Frage: Markdown Syntax z. B. Titel, Liste etc.</li>
+</ul>
+</aside>
+</section>
+<section id="live-auftrag-github-readme-bearbeiten" class="slide level1">
+<h1>Live-Auftrag: GitHub README Bearbeiten <i class="fas fa-shoe-prints"></i></h1>
+<p>Bearbeiten Sie nun das README.md (Markdown) und überprüfen Sie in der Vorschau, ob das Resultat Ihren Vorstellungen entspricht. Um die Datei zu speichern, geben Sie eine Beschreibung der Änderung ein und klicken Sie auf “Commit changes”.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/github_readme_1.png" height="300" /></td>
+<td><img data-src="images/github_readme_2.png" height="300" /></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="commits-und-versionierung" class="slide level1">
+<h1>Commits und Versionierung <i class="fas fa-history"></i></h1>
+<ul>
+<li>Commits beinhalten die Änderung einer/mehrerer Datein (History der Änderungen)</li>
+<li>Ein Commit sollte so benannt werden, dass klar ist, was geändert wurde</li>
+<li>Commits sollten in der Befehlsform geschrieben werden</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><img data-src="images/github_commit_1.png" height="200" /></td>
+<td><img data-src="images/github_commit_2.png" height="200" /></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="live-auftrag-github-datei-hochladen" class="slide level1">
+<h1>Live-Auftrag: GitHub Datei Hochladen <i class="fas fa-shoe-prints"></i></h1>
+<p>Laden Sie eine beliebige Datei (z. B. ein Bild oder .py Datei) auf GitHub. Benennen Sie den Commit korrekt und verständlich. Schauen Sie dann, ob ihr Commit erfolgreich hinzugefügt wurde.</p>
+<p><img data-src="images/github_upload_file_1.png" height="400" /></p>
+</section>
+<section id="auftrag-ca.-45-min-veröffentlichen-sie-eines-ihrer-programme-z.-b.-aus-den-aufträgen-auf-github" class="slide level1">
+<h1>Auftrag (ca. 45 Min): Veröffentlichen Sie eines Ihrer Programme (z. B. aus den Aufträgen) auf GitHub <i class="fas fa-shoe-prints"></i></h1>
+<ol type="1">
+<li>Wählen Sie eines ihrer Programme</li>
+<li>Formatieren Sie den Code (<strong>PEP 8 inkl. Kommentare</strong>)</li>
+<li>Laden Sie den dokumentierten Code (.py) auf GitHub</li>
+<li>Beschreiben Sie ihr Programm im <strong>README.md</strong>
+<ul>
+<li><strong>Einleitung</strong>: Was macht es und wie wird es benutzt? <br> (mind. 3 Sätze + mind. 1x Screenshot)</li>
+<li><strong>Features</strong>: Eine Liste von Features (mind. 3 Punkte)</li>
+<li><strong>Reflexion</strong>: Was haben Sie in den letzten Wochen gelernt und was nehmen Sie mit? (mind. <strong>1/2 Seite</strong>)</li>
+</ul></li>
+<li>Fügen Sie den <strong>Link</strong> zu ihrem Projekt <a href="https://docs.google.com/document/d/1x2KYgI5udH75z_oOjqKSRUAK_WgMr2-RoY5vt6Acj5I/edit?usp=sharing">hier</a> ein.</li>
+</ol>
+</section>
+    </div>
+  </div>
+
+  <script src="../../../assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="../../../assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="../../../assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="../../../assets/reveal.js/plugin/math/math.js"></script>
+  <script src="../../../assets/reveal.js/plugin/menu/menu.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu]
+    });
+  </script>
+</body>
+
+</html>

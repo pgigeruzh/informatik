@@ -3,6 +3,11 @@ title: Warum Python?
 author: Peter Giger
 ---
 
+# Was ist Programmieren? <i class="fas fa-code"></i>
+
+![](images/programming.drawio.png){ width=700px }
+
+
 # Warum Python <i class="fas fa-question"></i>
 
 1. Einfacher Syntax
@@ -22,6 +27,11 @@ author: Peter Giger
    - Web App (Backend): Instagram ![](images/instagram.jpg){ width=60px }
    - Web App (Frontend): -
 
+# Ein Beispielprojekt von mir: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i>
+
+|||
+| ----------------------------------- | ----------------------------------- | 
+| ![](images/paraglider.jpg){ height=500px } | ![](images/paraglider_line.jpg){ height=500px } | 
 
 # Ein Beispielprojekt von mir: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i>
 
@@ -29,6 +39,43 @@ author: Peter Giger
 | ----------------------------------- | ----------------------------------- | ----------------------------------- |
 | ![](images/line.jpg){ height=250px } | ![](images/machine.jpg){ height=250px } | ![](images/sensor.jpg){ height=250px } |
 | ![](images/esp32.jpg){ height=250px } | ![](images/code.jpg){ height=250px } | <video src="images/movie.mov" controls height="250px"></video> |
+
+# Ausgabe: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i>
+
+```bash
+------ Start Measurement ------
+3 kg
+10 kg
+30 kg
+70 kg
+120 kg
+160 kg
+190 kg # Max. Zugfestigkeit
+70 kg
+20 kg
+------ End Measurement ------
+```
+
+# Vereinfachter Code: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i>
+
+```python
+while True:
+    kg = driver.read() # Sensorwert auslesen (in kg)
+
+    if (kg > 3.0) and (kgPrev < 3.0):
+        # Zunehmender Leinenzug
+        print("------ Start Measurement ------")
+        
+    elif (kg < 3.0) and (kgPrev > 3.0):
+        # Abnehmender Leinenzug
+        print("------ End Measurement --------")
+        
+    elif (kg > 3.0):
+        # Werte über 3 kg sollen ausgegeben werden
+        print("kg: " + str(kg))
+    
+    kgPrev = kg # Vorherigen Wert aktualisieren
+```
 
 <!-- Archiv
 
