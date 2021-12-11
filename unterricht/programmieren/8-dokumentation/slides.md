@@ -5,11 +5,9 @@ author: Peter Giger
 
 # Lernziele <i class="fas fa-bullseye"></i>
 
-> Sie wissen, was PEP 8 ist und können einfachen Code nach diesem Standard formatieren
-
 > Sie kennen die Begriffe Git, GitHub, Open-Source Software, Markdown und können diese anhand eines Beispiels in Verbindung setzten
 
-> Sie können ihren eigenen Code (inkl. Dokumentation) auf GitHub veröffentlichen
+> Sie können ihren eigenen Code (inkl. Kommentare und Markdown-Dokumentation) auf GitHub veröffentlichen
 
 # Experiment - Was macht dieser Algorithmus? <i class="fas fa-terminal"></i>
 
@@ -25,6 +23,31 @@ Klicken Sie auf den folgenden Link und versuchen Sie **alleine** herauszufinden,
 [https://allocate.monster/STOZYTST](https://allocate.monster/STOZYTST)
 
 
+# Guter Code ist kommentierter Code <i class="far fa-comment-dots"></i>
+
+Kommentare helfen, den Code zu verstehen. In Python starten Kommentare mit einem # und sollten in ganzen Sätzen (erstes Wort gross) geschrieben werden, z. B.
+
+```python
+# Gut
+
+# Dieser Loop berechnet die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…)
+for i in range(int(1000 / 7)):
+   print((i + 1) * 7)
+
+# Schlecht
+# (1) Ganze Sätze
+# (2) Erste Wort muss gross sein
+# (3) Kommentare sollen helfen, den Code zu verstehen.
+#     z. B. "berechne (i+1)*7" steht bereits im Code,
+#     dann braucht es keinen Kommentar dafür.
+
+# loop bis 1000
+for i in range(int(1000 / 7)):
+   print((i + 1) * 7) # berechne (i+1)*7
+```
+
+
+<!--
 # PEP 8 -- Style Guide für Python Code <i class="far fa-file-code"></i>
 
 [PEP 8](https://www.python.org/dev/peps/pep-0008/) enthält Konvention, wie man "guten/schönen" Python-Code schreiben soll. Das hilft, damit andere Programmierer (und man selbst) den Code besser lesen können. Als Beispiel:
@@ -110,9 +133,7 @@ for i in range(int(1000 / 7)):
 for i in range(int(1000 / 7)):
    print((i + 1) * 7) # berechne (i+1)*7
 ```
-
-# [Play Kahoot!](https://kahoot.it/)
-
+-->
 
 # Was ist Open-Source Software? <br> Was ist Markdown? <i class="fas fa-lock-open"></i>
 
@@ -225,10 +246,10 @@ Laden Sie eine beliebige Datei (z. B. ein Bild oder .py Datei) auf GitHub. Benen
 # Auftrag (ca. 45 Min): Veröffentlichen Sie eines Ihrer Programme (z. B. aus den Aufträgen) auf GitHub <i class="fas fa-shoe-prints"></i>
 
 1. Wählen Sie eines ihrer Programme
-2. Formatieren Sie den Code (**PEP 8 inkl. Kommentare**)
-3. Laden Sie den dokumentierten Code (.py) auf GitHub
-4. Beschreiben Sie ihr Programm im **README.md**
-   * **Einleitung**: Was macht es und wie wird es benutzt? <br> (mind. 3 Sätze + mind. 1x Screenshot)
-   * **Features**: Eine Liste von Features (mind. 3 Punkte)
-   * **Reflexion**: Was haben Sie in den letzten Wochen gelernt und was nehmen Sie mit? (mind. **1/2 Seite**)
+2. **Kommentieren** Sie ihren Code
+3. Laden Sie den kommentierten Code (.py) auf GitHub
+4. Dokumentieren Sie ihr Programm im **README.md**
+   * **Einleitung**: Was macht es und wie wird es benutzt? <br> (mind. **3 Sätze** + mind. **1 Screenshot**)
+   * **Features**: Eine Liste von Features (mind. **3 Punkte**)
+   * **Reflexion**: Was haben Sie in den letzten Wochen gelernt und was nehmen Sie mit? (mind. **3 Sätze**)
 5. Fügen Sie den **Link** zu ihrem Projekt [hier](https://docs.google.com/document/d/1x2KYgI5udH75z_oOjqKSRUAK_WgMr2-RoY5vt6Acj5I/edit?usp=sharing) ein.

@@ -55,13 +55,10 @@
       <section id="lernziele" class="slide level1">
 <h1>Lernziele <i class="fas fa-bullseye"></i></h1>
 <blockquote>
-<p>Sie wissen, was PEP 8 ist und können einfachen Code nach diesem Standard formatieren</p>
-</blockquote>
-<blockquote>
 <p>Sie kennen die Begriffe Git, GitHub, Open-Source Software, Markdown und können diese anhand eines Beispiels in Verbindung setzten</p>
 </blockquote>
 <blockquote>
-<p>Sie können ihren eigenen Code (inkl. Dokumentation) auf GitHub veröffentlichen</p>
+<p>Sie können ihren eigenen Code (inkl. Kommentare und Markdown-Dokumentation) auf GitHub veröffentlichen</p>
 </blockquote>
 </section>
 <section id="experiment---was-macht-dieser-algorithmus" class="slide level1">
@@ -70,101 +67,112 @@
 <p>Klicken Sie auf den folgenden Link und versuchen Sie <strong>alleine</strong> herauszufinden, was der Algorithmus genau macht: <br> <br></p>
 <p><a href="https://allocate.monster/STOZYTST">https://allocate.monster/STOZYTST</a></p>
 </section>
-<section id="pep-8-style-guide-für-python-code" class="slide level1">
-<h1>PEP 8 – Style Guide für Python Code <i class="far fa-file-code"></i></h1>
-<p><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a> enthält Konvention, wie man “guten/schönen” Python-Code schreiben soll. Das hilft, damit andere Programmierer (und man selbst) den Code besser lesen können. Als Beispiel:</p>
-<blockquote>
-<p>"Function names should be lowercase, with words separated by underscores as necessary to improve readability.</p>
-<p>Variable names follow the same convention as function names.</p>
-<p>mixedCase is allowed only in contexts where that’s already the prevailing style, to retain backwards compatibility."</p>
-</blockquote>
-</section>
-<section id="pep-8-das-wichtigste" class="slide level1">
-<h1>PEP 8 – Das Wichtigste</h1>
-<table>
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 84%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Zeilenlänge:</td>
-<td>Max. 79 Zeichen</td>
-</tr>
-<tr class="even">
-<td>Variablennamen:</td>
-<td>Kleingeschrieben mit Unterstrich oder camelCase z. B. kebab_stand oder kebabStand</td>
-</tr>
-<tr class="odd">
-<td>Leerzeichen:</td>
-<td>Ein Leerzeichen zwischen Operatoren z. B. x = 5 und nicht x=5</td>
-</tr>
-<tr class="even">
-<td>Kommentare:</td>
-<td>Ganze Sätze und das erste Wort grossgeschrieben z. B. # Das ist ein Kommentar</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="pep-8-beispiel-zeilenlänge" class="slide level1">
-<h1>PEP 8: Beispiel Zeilenlänge</h1>
+<section id="guter-code-ist-kommentierter-code" class="slide level1">
+<h1>Guter Code ist kommentierter Code <i class="far fa-comment-dots"></i></h1>
+<p>Kommentare helfen, den Code zu verstehen. In Python starten Kommentare mit einem # und sollten in ganzen Sätzen (erstes Wort gross) geschrieben werden, z. B.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Geben Sie eine Zahl ein: &quot;</span>))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Mehr als 79 Zeichen (83 Zeichen mit Leerzeichen)</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Geben Sie hier eine Zahl ein, welche über 10 und unter 20 ist: &quot;</span>))</span></code></pre></div>
-</section>
-<section id="pep-8-beispiel-variablennamen" class="slide level1">
-<h1>PEP 8: Beispiel Variablennamen</h1>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>anzahl_der_schueler <span class="op">=</span> <span class="dv">17</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Auch gut, aber die veraltete Schreibweise</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>anzahlDerSchueler <span class="op">=</span> <span class="dv">17</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Nicht kleingeschrieben</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>Anzahl_der_Schueler <span class="op">=</span> <span class="dv">17</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Der Variablenname soll selbsterklärend sein</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">17</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Ausnahme: Loops und andere temporäre Variablen</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>(i)</span></code></pre></div>
-</section>
-<section id="pep-8-beispiel-leerzeichen" class="slide level1">
-<h1>PEP 8: Beispiel Leerzeichen</h1>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="dv">10</span>:</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>   i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht - Kein Leerzeichen zwischen den Operatoren</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>i<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i<span class="op">&lt;</span><span class="dv">10</span>:</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>   i<span class="op">=</span>i<span class="op">+</span><span class="dv">1</span></span></code></pre></div>
-</section>
-<section id="pep-8-kommentare" class="slide level1">
-<h1>PEP 8: Kommentare</h1>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dieser Loop berechnet die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…)</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) Ganze Sätze</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) Erste Wort muss gross sein</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># (3) Kommentare sollen helfen, den Code zu verstehen.</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     z. B. &quot;berechne (i+1)*7&quot; steht bereits im Code,</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     dann braucht es keinen Kommentar dafür.</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># loop bis 1000</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>) <span class="co"># berechne (i+1)*7</span></span></code></pre></div>
-</section>
-<section id="play-kahoot" class="slide level1">
-<h1><a href="https://kahoot.it/">Play Kahoot!</a></h1>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dieser Loop berechnet die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) Ganze Sätze</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) Erste Wort muss gross sein</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># (3) Kommentare sollen helfen, den Code zu verstehen.</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     z. B. &quot;berechne (i+1)*7&quot; steht bereits im Code,</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     dann braucht es keinen Kommentar dafür.</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># loop bis 1000</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>) <span class="co"># berechne (i+1)*7</span></span></code></pre></div>
+<!--
+# PEP 8 -- Style Guide für Python Code <i class="far fa-file-code"></i>
+
+[PEP 8](https://www.python.org/dev/peps/pep-0008/) enthält Konvention, wie man "guten/schönen" Python-Code schreiben soll. Das hilft, damit andere Programmierer (und man selbst) den Code besser lesen können. Als Beispiel:
+
+> "Function names should be lowercase, with words separated by underscores as necessary to improve readability.
+> 
+> Variable names follow the same convention as function names.
+> 
+> mixedCase is allowed only in contexts where that's already the prevailing style, to retain backwards compatibility."
+
+
+# PEP 8 -- Das Wichtigste
+
+|                 |                                                                                   |
+| --------------- | --------------------------------------------------------------------------------- |
+| Zeilenlänge:    | Max. 79 Zeichen                                                                   |
+| Variablennamen: | Kleingeschrieben mit Unterstrich oder camelCase z. B. kebab_stand oder kebabStand |
+| Leerzeichen:    | Ein Leerzeichen zwischen Operatoren z. B. x = 5 und nicht x=5                     |
+| Kommentare:     | Ganze Sätze und das erste Wort grossgeschrieben z. B. # Das ist ein Kommentar     |
+
+
+# PEP 8: Beispiel Zeilenlänge
+
+```python
+# Gut
+x = float(input("Geben Sie eine Zahl ein: "))
+
+# Schlecht - Mehr als 79 Zeichen (83 Zeichen mit Leerzeichen)
+x = float(input("Geben Sie hier eine Zahl ein, welche über 10 und unter 20 ist: "))
+```
+
+# PEP 8: Beispiel Variablennamen
+
+```python
+# Gut
+anzahl_der_schueler = 17
+
+# Auch gut, aber die veraltete Schreibweise
+anzahlDerSchueler = 17
+
+# Schlecht - Nicht kleingeschrieben
+Anzahl_der_Schueler = 17
+
+# Schlecht - Der Variablenname soll selbsterklärend sein
+x = 17
+
+# Ausnahme: Loops und andere temporäre Variablen
+for i in range(10):
+   print(i)
+```
+
+# PEP 8: Beispiel Leerzeichen
+
+```python
+# Gut
+i = 0
+while i < 10:
+   i = i + 1
+
+# Schlecht - Kein Leerzeichen zwischen den Operatoren
+i=0
+while i<10:
+   i=i+1
+```
+
+# PEP 8: Kommentare
+
+```python
+# Gut
+
+# Dieser Loop berechnet die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…)
+for i in range(int(1000 / 7)):
+   print((i + 1) * 7)
+
+# Schlecht
+# (1) Ganze Sätze
+# (2) Erste Wort muss gross sein
+# (3) Kommentare sollen helfen, den Code zu verstehen.
+#     z. B. "berechne (i+1)*7" steht bereits im Code,
+#     dann braucht es keinen Kommentar dafür.
+
+# loop bis 1000
+for i in range(int(1000 / 7)):
+   print((i + 1) * 7) # berechne (i+1)*7
+```
+-->
 </section>
 <section id="was-ist-open-source-software-was-ist-markdown" class="slide level1">
 <h1>Was ist Open-Source Software? <br> Was ist Markdown? <i class="fas fa-lock-open"></i></h1>
@@ -298,13 +306,13 @@
 <h1>Auftrag (ca. 45 Min): Veröffentlichen Sie eines Ihrer Programme (z. B. aus den Aufträgen) auf GitHub <i class="fas fa-shoe-prints"></i></h1>
 <ol type="1">
 <li>Wählen Sie eines ihrer Programme</li>
-<li>Formatieren Sie den Code (<strong>PEP 8 inkl. Kommentare</strong>)</li>
-<li>Laden Sie den dokumentierten Code (.py) auf GitHub</li>
-<li>Beschreiben Sie ihr Programm im <strong>README.md</strong>
+<li><strong>Kommentieren</strong> Sie ihren Code</li>
+<li>Laden Sie den kommentierten Code (.py) auf GitHub</li>
+<li>Dokumentieren Sie ihr Programm im <strong>README.md</strong>
 <ul>
-<li><strong>Einleitung</strong>: Was macht es und wie wird es benutzt? <br> (mind. 3 Sätze + mind. 1x Screenshot)</li>
-<li><strong>Features</strong>: Eine Liste von Features (mind. 3 Punkte)</li>
-<li><strong>Reflexion</strong>: Was haben Sie in den letzten Wochen gelernt und was nehmen Sie mit? (mind. <strong>1/2 Seite</strong>)</li>
+<li><strong>Einleitung</strong>: Was macht es und wie wird es benutzt? <br> (mind. <strong>3 Sätze</strong> + mind. <strong>1 Screenshot</strong>)</li>
+<li><strong>Features</strong>: Eine Liste von Features (mind. <strong>3 Punkte</strong>)</li>
+<li><strong>Reflexion</strong>: Was haben Sie in den letzten Wochen gelernt und was nehmen Sie mit? (mind. <strong>3 Sätze</strong>)</li>
 </ul></li>
 <li>Fügen Sie den <strong>Link</strong> zu ihrem Projekt <a href="https://docs.google.com/document/d/1x2KYgI5udH75z_oOjqKSRUAK_WgMr2-RoY5vt6Acj5I/edit?usp=sharing">hier</a> ein.</li>
 </ol>
