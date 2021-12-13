@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <title>Informatik - Prüfungsbesprechung</title>
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="/assets/reveal.js/reset.css">
+  <link rel="stylesheet" href="/assets/reveal.js/reveal.css">
+  <link rel="stylesheet" href="/assets/reveal.js/theme/beige.css">
+  <link rel="stylesheet" href="/assets/reveal.js/plugin/highlight/zenburn.css">
+
+  <!-- font awesome -->
+  <script defer src="/assets/fontawesome/js/all.js"></script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Aufgabe 0 (a) -->
+      <section>Aufgabe 0 (a)</section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(a) Angenommen x=3 und y=5, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = int(input("Geben Sie x ein: "))
+          y = int(input("Geben Sie y ein: "))
+
+          if x > y:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(a) Angenommen x=3 und y=5, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="1-2" class="python">
+          x = 3
+          y = 5
+
+          if x > y:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(a) Angenommen x=3 und y=5, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="4" class="python">
+          x = 3
+          y = 5
+
+          if 3 > 5:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(a) Angenommen x=3 und y=5, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="6|8" class="python">
+          x = 3
+          y = 5
+
+          if 3 > 5:
+            print(x)
+          elif 3 == 5:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(a) Angenommen x=3 und y=5, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="9" class="python">
+          x = 3
+          y = 5
+
+          if 3 > 5:
+            print(x)
+          elif 3 == 5:
+            print(x)
+          else:
+            print(5)
+        </code></pre>
+        <blockquote class="fragment">
+          <small align="left">
+            <strong>1P:</strong> 5 oder y <br>
+            <strong>0P:</strong> Alles andere
+          </small>
+        </blockquote>
+      </section>
+
+      <!-- Aufgabe 0 (b) -->
+      <section>Aufgabe 0 (b)</section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(b) Angenommen x=1 und y=-7, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = int(input("Geben Sie x ein: "))
+          y = int(input("Geben Sie y ein: "))
+      
+          if x > y:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(b) Angenommen x=1 und y=-7, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="1-2" class="python">
+          x = 1
+          y = -7
+
+          if x > y:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(b) Angenommen x=1 und y=-7, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="4" class="python">
+          x = 1
+          y = -7
+
+          if 1 > -7:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(b) Angenommen x=1 und y=-7, was ist der Output von diesem Programm? (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="5" class="python">
+          x = 1
+          y = -7
+
+          if 1 > -7:
+            print(1)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+        <blockquote class="fragment">
+          <small align="left">
+            <strong>1P:</strong> 1 oder x <br>
+            <strong>0P:</strong> Alles andere
+          </small>
+        </blockquote>
+      </section>
+
+      <!-- Aufgabe 0 (c) -->
+      <section>Aufgabe 0 (c)</section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(c) Was macht dieses Programm? Begründen Sie stichwortartig. (1 Punkt)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = int(input("Geben Sie x ein: "))
+          y = int(input("Geben Sie y ein: "))
+      
+          if x > y:
+            print(x)
+          elif x == y:
+            print(x)
+          else:
+            print(y)
+        </code></pre>
+        <small class="fragment">x = 1 und y = -7 &emsp;&emsp;<i class="fas fa-arrow-right"></i>&emsp;&emsp; 1</small>
+        <br>
+        <small class="fragment">x = -7 und y = 1 &emsp;&emsp;<i class="fas fa-arrow-right"></i>&emsp;&emsp; 1</small>
+        <br>
+        <small class="fragment">x = 4 und y = 1 &emsp;&emsp;&emsp;<i class="fas fa-arrow-right"></i>&emsp;&emsp;
+          4</small>
+        <br>
+        <small class="fragment">x = 1 und y = 4 &emsp;&emsp;&emsp;<i class="fas fa-arrow-right"></i>&emsp;&emsp;
+          4</small>
+        <blockquote class="fragment">
+          <small align="left">
+            <strong>1P:</strong> Maximum ausrechnen <br>
+            <strong>0.5:</strong> Zahlen vergleichen
+          </small>
+        </blockquote>
+        <strong class="fragment">Lösung: Maximum ausrechnen (1 Punkt)</strong>
+      </section>
+
+      <!-- Aufgabe 0 (d) -->
+      <section>Aufgabe 0 (d)</section>
+      <section data-auto-animate>Aufgabe 0
+        <p><small>(d) Erstellen Sie ein Flussdiagramm dazu (2 Punkte)</small></p>
+        <blockquote>
+          <small align="left">
+            <strong>2P: </strong>Vollständig korrekt oder ein kleiner Fehler z. B. "" oder ==<br>
+            <strong>1.5P: </strong>Mehrere Fehler<br>
+            <strong>1P: </strong>Logik-Fehler z. B. falsche oder zu viele Verzweigungen<br>
+            <strong>0.5P: </strong> Sieht aus wie ein Flussdiagramm<br>
+          </small>
+        </blockquote>
+        <table>
+          <tr>
+            <td width="50%">
+              <img data-src="code_maximum.png" width="350px">
+            </td>
+            <td>
+              <img data-src="flussdiagramm_maximum.drawio.png" width="350px">
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Aufgabe 1 -->
+      <section>Aufgabe 1</section>
+      <section data-auto-animate>Aufgabe 1
+        <p><small>Programmieren Sie ein “Schere-Stein-Papier” Spiel, aber OHNE “Papier”. (3 Punkte)</small></p>
+        <blockquote>
+          <small align="left">
+            <strong>3P: </strong>Korrektes und funktionsfähiges Programm ("" vergessen ist ok) <br>
+            <strong>2.5P: </strong>Ein (kleiner) Fehler z. B. 1x falsches/fehlendes Typecasting <br>
+            <strong>2P: </strong>Richtige Logik/Überlegung, aber einige Fehler / fehlender Code <br>
+            <strong>1.5P: </strong>Korrekte Struktur vorhanden aber falsche Logik <br>
+            <strong>1P: </strong>Es sieht aus wie Python
+          </small>
+        </blockquote>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          wahl1 = input("Wahl von Spieler 1 (Schere oder Stein): ")
+          wahl2 = input("Wahl von Spieler 2 (Schere oder Stein): ")
+          
+          if wahl1 == "Schere":
+              if wahl2 == "Schere":
+                  print("Unentschieden")
+              elif wahl2 == "Stein":
+                  print("Spieler 2 gewinnt")
+          
+          if wahl1 == "Stein":
+              if wahl2 == "Schere":
+                  print("Spieler 1 gewinnt")
+              elif wahl2 == "Stein":
+                  print("Unentschieden")
+        </code></pre>
+      </section>
+      
+      <!-- Aufgabe 2 (a) -->
+      <section>Aufgabe 2 (a)</section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = 6
+          i = 0
+          while i < 4:
+            x = x + i
+            i = i + 1
+            print(x)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="3" class="python">
+          x = 6
+          i = 0
+          while 0 < 4:
+            x = x + i
+            i = i + 1
+            print(x)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="4-6" class="python">
+          x = 6
+          i = 0
+          while 0 < 4:
+            x = 6 + 0
+            i = 0 + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+          </small>
+        </blockquote>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="3" class="python">
+          x = 6
+          i = 1
+          while 1 < 4:
+            x = x + i
+            i = i + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+          </small>
+        </blockquote>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="4-6" class="python">
+          x = 6
+          i = 1
+          while 1 < 4:
+            x = 6 + 1
+            i = 1 + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+            <strong>0.5P: </strong>7<br>
+          </small>
+        </blockquote>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="3" class="python">
+          x = 7
+          i = 2
+          while 2 < 4:
+            x = x + i
+            i = i + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+            <strong>0.5P: </strong>7<br>
+          </small>
+        </blockquote>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="4-6" class="python">
+          x = 7
+          i = 2
+          while 2 < 4:
+            x = 7 + 2
+            i = 2 + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+            <strong>0.5P: </strong>7<br>
+            <strong>0.5P: </strong>9<br>
+          </small>
+        </blockquote>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="3" class="python">
+          x = 9
+          i = 3
+          while 3 < 4:
+            x = x + i
+            i = i + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+            <strong>0.5P: </strong>7<br>
+            <strong>0.5P: </strong>9<br>
+          </small>
+        </blockquote>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(a) Was sind die Outputs von diesem Programm? (2 Punkte)</small></p>
+        <pre data-id="code-animation"><code data-trim data-line-numbers="4-6" class="python">
+          x = 9
+          i = 3
+          while 3 < 4:
+            x = 9 + 3
+            i = 3 + 1
+            print(x)
+        </code></pre>
+        <blockquote>
+          <small align="left">
+            <strong>0.5P: </strong>6<br>
+            <strong>0.5P: </strong>7<br>
+            <strong>0.5P: </strong>9<br>
+            <strong>0.5P: </strong>12<br>
+          </small>
+        </blockquote>
+      </section>
+
+      <!-- Aufgabe 2 (b) -->
+      <section>Aufgabe 2 (b)</section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(b) Schreiben Sie das Programm mit einer For-Schleife statt einer While-Schleife (1 Punkt)</small></p>
+        <blockquote>
+          <small align="left">
+            <strong>1P: </strong>Vollständig korrekt<br>
+            <strong>0.5P: </strong>For-Loop und x wurde richtig definiert
+          </small>
+        </blockquote>
+        Original:
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = 6
+          i = 0
+          while i < 4:
+            x = x + i
+            i = i + 1
+            print(x)
+        </code></pre>
+        Lösung:
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = 6
+          for i in range(4):
+            x = x + i
+            print(x)
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(b) Schreiben Sie das Programm mit einer For-Schleife statt einer While-Schleife (1 Punkt)</small></p>
+        Häufiger Fehler:
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          x = 6
+          i = 0
+          for i in range(4):
+            x = x + i
+            i = i + 1 # unnötig!
+            print(x)
+        </code></pre>
+      </section>
+
+      <!-- Aufgabe 2 (c) -->
+      <section>Aufgabe 2 (c)</section>
+      <section data-auto-animate>Aufgabe 2
+        <p><small>(c) Warum sollten Sie wenn immer möglich For-Loops nehmen? Begründen Sie stichwortartig oder anhand eines Beispiels. (1 Punkt)</small></p>
+        <blockquote>
+          <small align="left">
+            <strong>1P: </strong>For-Loops sind weniger fehleranfällig<br>
+            <strong>0P: </strong>Alles andere<br>
+          </small>
+        </blockquote>
+      </section>
+
+      <!-- Aufgabe 3 (a) -->
+      <section>Aufgabe 3 (a)</section>
+      <section data-auto-animate>Aufgabe 3
+        <p><small>(a) Ihr Smartphone verliert jedes Jahr ca. die Hälfte des Wertes (je nach Marke). Erstellen Sie ein Programm, bei welchem Sie den Preis des Smartphones eingeben können und der Wert für jedes Jahr (bis 5 Jahre) ausgegeben wird. (3 Punkte)</small></p>
+        <blockquote>
+          <small align="left">
+            <strong>3P: </strong>Korrektes und funktionsfähiges Programm ("" vergessen ist ok) <br>
+            <strong>2.5P: </strong>Ein (kleiner) Fehler z. B. 1x falsches/fehlendes Typecasting <br>
+            <strong>2P: </strong>Richtige Logik/Überlegung, aber einige Fehler / fehlender Code <br>
+            <strong>1.5P: </strong>Korrekte Struktur vorhanden aber falsche Logik <br>
+            <strong>1P: </strong>Es sieht aus wie Python
+          </small>
+        </blockquote>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          wert = int(input("Geben Sie den Preis ein: "))
+          for i in range(1, 6):
+            wert = wert / 2
+            print(str(i) + " Jahr: " + str(wert))
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 3
+        <p><small>(a) Ihr Smartphone verliert jedes Jahr ca. die Hälfte des Wertes (je nach Marke). Erstellen Sie ein Programm, bei welchem Sie den Preis des Smartphones eingeben können und der Wert für jedes Jahr (bis 5 Jahre) ausgegeben wird. (3 Punkte)</small></p>
+        Pragmatische Lösung:
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          price = float(input("Geben Sie den Preis ein: "))
+          print("1. Jahr: " + str(price/2))
+          print("2. Jahr: " + str(price/2/2))
+          print("3. Jahr: " + str(price/2/2/2))
+          print("4. Jahr: " + str(price/2/2/2/2))
+          print("5. Jahr: " + str(price/2/2/2/2/2))
+        </code></pre>
+      </section>
+
+      <!-- Aufgabe 3 (b) -->
+      <section>Aufgabe 3 (b)</section>
+      <section data-auto-animate>Aufgabe 3
+        <p><small>(b) Sie wollen fit werden und erstellen dazu einen Trainingsplan. Da Sie nicht jeden Tag trainieren sollten, entscheiden Sie sich dazu, jeden zweiten Tag ins Gym zu gehen. Erstellen Sie ein Programm, welches ihnen alle Trainingsdaten im Januar ausgibt, z. B. (3 Punkte)</small></p>
+        <blockquote>
+          <small align="left">
+            <strong>3P: </strong>Korrektes und funktionsfähiges Programm ("" vergessen ist ok) <br>
+            <strong>2.5P: </strong>Ein (kleiner) Fehler z. B. 1x falsches/fehlendes Typecasting <br>
+            <strong>2P: </strong>Richtige Logik/Überlegung, aber einige Fehler / fehlender Code <br>
+            <strong>1.5P: </strong>Korrekte Struktur vorhanden aber falsche Logik <br>
+            <strong>1P: </strong>Es sieht aus wie Python
+          </small>
+        </blockquote>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          i = 1
+          while i <= 31:
+            print(str(i) + ".1.2022")
+            i = i + 2
+        </code></pre>
+      </section>
+      <section data-auto-animate>Aufgabe 3
+        <p><small>(b) Sie wollen fit werden und erstellen dazu einen Trainingsplan. Da Sie nicht jeden Tag trainieren sollten, entscheiden Sie sich dazu, jeden zweiten Tag ins Gym zu gehen. Erstellen Sie ein Programm, welches ihnen alle Trainingsdaten im Januar ausgibt, z. B. (3 Punkte)</small></p>
+        Häufiger Fehler:
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          i = 1.1.2022 # Ein Float ist kein Datum!
+          while True:
+              print(i)
+            if i == 31.1.2022:
+                  break
+            i = i + 2
+        </code></pre>
+        <pre data-id="code-animation"><code data-trim data-line-numbers class="python">
+          for tag in range(1.1.2022, 32.1.2022): # For-Loop geht nicht!
+            print(tag)
+            tag = tag + 2
+        </code></pre>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="/assets/reveal.js/reveal.js"></script>
+
+  <!-- plugins -->
+  <script src="/assets/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="/assets/reveal.js/plugin/notes/notes.js"></script>
+  <script src="/assets/reveal.js/plugin/math/math.js"></script>
+  <script src="/assets/reveal.js/plugin/menu/menu.js"></script>
+  <script src="/assets/reveal.js/plugin/highlight/highlight.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      // plugins
+      plugins: [RevealMarkdown, RevealNotes, RevealMath, RevealMenu, RevealHighlight]
+    });
+  </script>
+</body>
+
+</html>

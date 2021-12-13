@@ -10,8 +10,6 @@ author: Peter Giger
 
 # Hilfreiche Links
 
-[PEP 8](https://www.python.org/dev/peps/pep-0008/) -- Style Guide für Python Code (in Englisch)
-
 [GitHub](https://github.com) -- Eine der populärsten Plattformen für Open-Source Software
 
 [Markdownify](https://github.com/amitmerchant1990/electron-markdownify#readme), [GitPoint](https://github.com/gitpoint/git-point#readme) --  Beispiele von guten README.md aus Open-Source Projekten

@@ -14,6 +14,10 @@ author: Peter Giger
 
 [Zwischenprüfung 2021 Lösungsvorschlag](files/Zwischenprüfung_2021_Lösungen.pdf)
 
+[Endprüfung 2021](files/Endprüfung_2021.pdf)
+
+[Endprüfung 2021 Lösungsvorschlag](files/Endprüfung_2021_Lösungen.pdf)
+
 
 # Grundgedanken von diesem Kurs
 
