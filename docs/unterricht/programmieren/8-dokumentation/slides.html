@@ -69,23 +69,19 @@
 </section>
 <section id="guter-code-ist-kommentierter-code" class="slide level1">
 <h1>Guter Code ist kommentierter Code <i class="far fa-comment-dots"></i></h1>
-<p>Kommentare helfen, den Code zu verstehen. In Python starten Kommentare mit einem # und sollten in ganzen Sätzen (erstes Wort gross) geschrieben werden, z. B.</p>
+<p>Kommentare helfen, den Code zu verstehen. In Python starten <strong>Kommentare</strong> mit einem <strong>#</strong> und sollten in <strong>ganzen Sätzen</strong> (erstes Wort gross) geschrieben werden, z. B.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gut</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dieser Loop berechnet die 7er-Reihe bis 1000 (1x7, 2x7, 3x7…)</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># (1) Ganze Sätze</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># (2) Erste Wort muss gross sein</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># (3) Kommentare sollen helfen, den Code zu verstehen.</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#     z. B. &quot;berechne (i+1)*7&quot; steht bereits im Code,</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#     dann braucht es keinen Kommentar dafür.</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># loop bis 1000</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>) <span class="co"># berechne (i+1)*7</span></span></code></pre></div>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlecht</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># loop bis 1000</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">int</span>(<span class="dv">1000</span> <span class="op">/</span> <span class="dv">7</span>)):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>   <span class="bu">print</span>((i <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">7</span>) <span class="co"># berechne (i+1)*7</span></span></code></pre></div>
 <!--
 # PEP 8 -- Style Guide für Python Code <i class="far fa-file-code"></i>
 

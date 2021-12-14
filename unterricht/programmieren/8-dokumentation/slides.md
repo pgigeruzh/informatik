@@ -25,7 +25,7 @@ Klicken Sie auf den folgenden Link und versuchen Sie **alleine** herauszufinden,
 
 # Guter Code ist kommentierter Code <i class="far fa-comment-dots"></i>
 
-Kommentare helfen, den Code zu verstehen. In Python starten Kommentare mit einem # und sollten in ganzen Sätzen (erstes Wort gross) geschrieben werden, z. B.
+Kommentare helfen, den Code zu verstehen. In Python starten **Kommentare** mit einem **#** und sollten in **ganzen Sätzen** (erstes Wort gross) geschrieben werden, z. B.
 
 ```python
 # Gut
@@ -34,12 +34,8 @@ Kommentare helfen, den Code zu verstehen. In Python starten Kommentare mit einem
 for i in range(int(1000 / 7)):
    print((i + 1) * 7)
 
+
 # Schlecht
-# (1) Ganze Sätze
-# (2) Erste Wort muss gross sein
-# (3) Kommentare sollen helfen, den Code zu verstehen.
-#     z. B. "berechne (i+1)*7" steht bereits im Code,
-#     dann braucht es keinen Kommentar dafür.
 
 # loop bis 1000
 for i in range(int(1000 / 7)):

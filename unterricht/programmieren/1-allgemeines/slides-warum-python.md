@@ -56,20 +56,20 @@ author: Peter Giger
 ------ End Measurement ------
 ```
 
-# Vereinfachter Code: <br> Gleitschirm Leinenreissmaschine <i class="fas fa-parachute-box"></i>
+# Vereinfachter Code <i class="fas fa-parachute-box"></i>
 
 ```python
+kgPrev = 0 # Vorherigen Wert initialisieren
+
 while True:
     kg = driver.read() # Sensorwert auslesen (in kg)
 
     if (kg > 3.0) and (kgPrev < 3.0):
         # Zunehmender Leinenzug
         print("------ Start Measurement ------")
-        
     elif (kg < 3.0) and (kgPrev > 3.0):
         # Abnehmender Leinenzug
-        print("------ End Measurement --------")
-        
+        print("------ End Measurement --------") 
     elif (kg > 3.0):
         # Werte über 3 kg sollen ausgegeben werden
         print("kg: " + str(kg))
